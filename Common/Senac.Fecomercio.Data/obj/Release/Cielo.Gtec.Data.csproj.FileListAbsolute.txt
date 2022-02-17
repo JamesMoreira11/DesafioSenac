@@ -1,0 +1,17 @@
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Data.dll.config
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Data.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Data.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Common.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Entities.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Exceptions.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Newtonsoft.Json.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Oracle.ManagedDataAccess.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Common.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Exceptions.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Newtonsoft.Json.xml
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Cielo.Gtec.Data.csprojAssemblyReference.cache
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Cielo.Gtec.Data.csproj.CoreCompileInputs.cache
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Cielo.Gtec.Data.csproj.CopyComplete
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Cielo.Gtec.Data.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Cielo.Gtec.Data.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Entities.pdb

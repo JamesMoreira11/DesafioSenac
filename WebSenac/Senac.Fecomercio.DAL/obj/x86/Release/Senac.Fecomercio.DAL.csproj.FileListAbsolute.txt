@@ -1,0 +1,9 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\CieloGtecDAL.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\CieloGtecDAL.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\Senac.Fecomercio.DAL.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\Senac.Fecomercio.DAL.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\Senac.Fecomercio.DAL.csproj.CopyComplete
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\CieloGtecDAL.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\CieloGtecDAL.pdb

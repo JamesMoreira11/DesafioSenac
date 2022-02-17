@@ -1,0 +1,11 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\bin\Debug\Cielo.Gtec.Exceptions.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\bin\Debug\Cielo.Gtec.Exceptions.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Debug\Senac.Fecomercio.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Debug\Cielo.Gtec.Exceptions.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Debug\Cielo.Gtec.Exceptions.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Common\Senac.Fecomercio.Exceptions\bin\Debug\Cielo.Gtec.Exceptions.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Common\Senac.Fecomercio.Exceptions\bin\Debug\Cielo.Gtec.Exceptions.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Common\Senac.Fecomercio.Exceptions\obj\Debug\Senac.Fecomercio.Exceptions.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Common\Senac.Fecomercio.Exceptions\obj\Debug\Senac.Fecomercio.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Common\Senac.Fecomercio.Exceptions\obj\Debug\Cielo.Gtec.Exceptions.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Common\Senac.Fecomercio.Exceptions\obj\Debug\Cielo.Gtec.Exceptions.pdb

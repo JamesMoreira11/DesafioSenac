@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://gtec.cielo.com.br/BaixaChamado/v1" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://gtec.cielo.com.br/BaixaChamado/v1" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://gtec.cielo.com.br/BaixaChamado/v1">
+      <s:element name="BaixarChamado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="unbounded" name="filtroChamados" type="tns:WSFiltroChamadoBaixa" />
+            <s:element minOccurs="1" maxOccurs="1" name="contraOrdemHora" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="contraOrdemContatoEc" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="usuario" nillable="true" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dominio" nillable="true" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cpfTecnico" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="servicoExecutado" nillable="true" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSFiltroChamadoBaixa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="numeroChamado" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="numeroChamadoEds" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="sequencial" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="numeroLogico" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="instalacaoRetirada" type="tns:WSInstalacaoRetirada" />
+          <s:element minOccurs="0" maxOccurs="1" name="estabelecimento" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="tipoSolucao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="WSInstalacaoRetirada">
+        <s:restriction base="s:string">
+          <s:enumeration value="Instalacao" />
+          <s:enumeration value="Retirada" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="BaixarChamadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BaixarChamadoResult" type="tns:WSRespostaBaixa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WSRespostaBaixa">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="codigo" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="mensagem" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="listaContraOrdem" type="tns:ArrayOfWSContraOrdem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfWSContraOrdem">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WSContraOrdem" nillable="true" type="tns:WSContraOrdem" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WSContraOrdem">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="chamado" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="sequencial" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="contraOrdemNumero" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="BaixarChamadoSoapIn">
+    <wsdl:part name="parameters" element="tns:BaixarChamado" />
+  </wsdl:message>
+  <wsdl:message name="BaixarChamadoSoapOut">
+    <wsdl:part name="parameters" element="tns:BaixarChamadoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="BaixaChamadoSoap">
+    <wsdl:operation name="BaixarChamado">
+      <wsdl:input message="tns:BaixarChamadoSoapIn" />
+      <wsdl:output message="tns:BaixarChamadoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BaixaChamadoSoap" type="tns:BaixaChamadoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BaixarChamado">
+      <soap:operation soapAction="http://gtec.cielo.com.br/BaixaChamado/v1/BaixarChamado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BaixaChamadoSoap12" type="tns:BaixaChamadoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BaixarChamado">
+      <soap12:operation soapAction="http://gtec.cielo.com.br/BaixaChamado/v1/BaixarChamado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="BaixaChamado">
+    <wsdl:port name="BaixaChamadoSoap" binding="tns:BaixaChamadoSoap">
+      <soap:address location="http://webcenterhml/wsgtec/baixa/v1/BaixaChamado.asmx" />
+    </wsdl:port>
+    <wsdl:port name="BaixaChamadoSoap12" binding="tns:BaixaChamadoSoap12">
+      <soap12:address location="http://webcenterhml/wsgtec/baixa/v1/BaixaChamado.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

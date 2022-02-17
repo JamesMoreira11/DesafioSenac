@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://service.cielo.com.br/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" xmlns:com="http://canonico.cielo.com.br/comum/v1" elementFormDefault="qualified" targetNamespace="http://service.cielo.com.br/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="abrirEventoRequest" type="tns:AbrirEventoRequestType">
+    <annotation>
+      <documentation>
+				Dados de entrada para abrir evento no SEC.
+			</documentation>
+    </annotation>
+  </element>
+  <element name="abrirEventoResponse" type="tns:AbrirEventoResponseType">
+    <annotation>
+      <documentation>
+				Dados de saida para abrir evento no SEC.
+			</documentation>
+    </annotation>
+  </element>
+  <complexType name="AbrirEventoRequestType">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="codigoEvento" type="int">
+        <annotation>
+          <documentation>Código do evento de abertura da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="1" maxOccurs="1" name="codigoCliente" type="long">
+        <annotation>
+          <documentation>
+						Codigo adotado pela Cielo para identificar o Cliente
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoLinha1" type="string">
+        <annotation>
+          <documentation>Conteúdo referente ao layout a ser utilizado abertura da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoLinha2" type="string">
+        <annotation>
+          <documentation>Conteúdo referente ao layout a ser utilizado abertura da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoLinha3" type="string">
+        <annotation>
+          <documentation>Conteúdo referente ao layout a ser utilizado abertura da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoLinha4" type="string">
+        <annotation>
+          <documentation>Conteúdo referente ao layout a ser utilizado abertura da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoLinha5" type="string">
+        <annotation>
+          <documentation>Conteúdo referente ao layout a ser utilizado abertura da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoLinha6" type="string">
+        <annotation>
+          <documentation>Conteúdo referente ao layout a ser utilizado abertura da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoDependencia" type="integer">
+        <annotation>
+          <documentation>Código da ilha responsável por tratar a demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeCanalSolicitante" type="string">
+        <annotation>
+          <documentation>Nome do canal solicitante da demanda. Exemplo: CRM</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeUsuarioOperador" type="string">
+        <annotation>
+          <documentation>Nome do usuário solicitante da demanda</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoStatusEvento" type="string">
+        <annotation>
+          <documentation>Código referente ao status da demanda. Exemplo: P -&gt; Pendente</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorConfirmacao" type="boolean">
+        <annotation>
+          <documentation>Indicador de confirmação se a demanda será finalizada</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="AbrirEventoResponseType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoErro" type="int">
+        <annotation>
+          <documentation>Código do erro caso houver</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroRegistroEvento" type="long">
+        <annotation>
+          <documentation>Número do protocolo gerado na alteração da demanda</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+</schema>

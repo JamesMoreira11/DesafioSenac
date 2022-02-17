@@ -1,0 +1,1845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://service.cielo.com.br/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" xmlns:com="http://canonico.cielo.com.br/comum/v1" elementFormDefault="qualified" targetNamespace="http://service.cielo.com.br/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="consultarDadosCadastraisClienteRequest" type="tns:ConsultarDadosCadastraisClienteRequestType">
+    <annotation>
+      <documentation>
+				Dados de entrada para consulta dos dados cadastrais do
+				cliente no SEC na mensagem 101.Essa nova versão é a evolução da
+				versão 3 com os campos de Gerente Virtual.
+			</documentation>
+    </annotation>
+  </element>
+  <element name="consultarDadosCadastraisClienteResponse" type="tns:ConsultarDadosCadastraisClienteResponseType">
+    <annotation>
+      <documentation>
+				Dados de saida para consulta dos dados cadastrais do
+				cliente no SEC na mensagem 101.Essa nova versão é a evolução da
+				versão 3 com os campos de Gerente Virtual.
+			</documentation>
+    </annotation>
+  </element>
+  <complexType name="ConsultarDadosCadastraisClienteRequestType">
+    <sequence>
+      <choice>
+        <element minOccurs="1" maxOccurs="1" name="codigoCliente" type="long" />
+        <element minOccurs="1" maxOccurs="1" name="identificacaoCliente" type="tns:ConsultarDadosCadastraisClienteRequestIdentificacaoClienteType" />
+      </choice>
+      <element minOccurs="0" maxOccurs="1" name="tipoConsulta" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseType">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="dadosCliente" type="tns:ConsultarDadosCadastraisClienteResponseDadosClienteType" />
+      <element minOccurs="1" maxOccurs="1" name="dadosAfiliacao" type="tns:ConsultarDadosCadastraisClienteResponseDadosCredenciamentoType" />
+      <element minOccurs="0" maxOccurs="1" name="numeroMatriz" nillable="true" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorMultivan" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorAlteracaoDiario" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorAssinaturaArquivo" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="nomeEmailContatoAdicional" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorBloqueioSuprimentos" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="codigoGerenteVirtual" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeGerenteVirtual" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorClientePrepago" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorClienteVendas" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorFranquia" type="boolean" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteRequestIdentificacaoClienteType">
+    <sequence>
+      <choice>
+        <element minOccurs="1" maxOccurs="1" name="CPF">
+          <simpleType>
+            <restriction base="string">
+              <minLength value="1" />
+            </restriction>
+          </simpleType>
+        </element>
+        <element minOccurs="1" maxOccurs="1" name="CNPJ">
+          <simpleType>
+            <restriction base="string">
+              <minLength value="1" />
+            </restriction>
+          </simpleType>
+        </element>
+      </choice>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosCredenciamentoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoCredenciamento" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="dataCredenciamento" nillable="true" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="codigoBanco" nillable="true" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="numeroAgencia" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoRegional" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomePlaqueta" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorCentroCompras" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoTerminal" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="quantidadeTerminal" nillable="true" type="int" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosClienteType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoCliente" nillable="true" type="long">
+        <annotation>
+          <documentation>Codigo adotado pela Cielo para identificar o Cliente
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroInscricaoEstadual" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero da inscricao estadual do cliente
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dataAberturaCliente" nillable="true" type="date">
+        <annotation>
+          <documentation>Data na qual o cliente foi aberto na cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoCadeia" nillable="true" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="descricaoPOS" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorCessao" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="descricaoComplementoRamoAtividade" nillable="true" type="string">
+        <annotation>
+          <documentation>Descricao complementar definido pelas bandeiras Visa
+						e Mastercard ou pela Cielo para qualificar ainda mais o ramo de
+						atividade do Cliente.para classificar o ramo de negocio dos seus
+						clientes.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorCartaCircularizacao" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorAntecipacaoAutomatica" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="nomeEnderecoSite" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorAntecipacaoSecuritizacao" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosProprietarioCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosProprietarioType">
+        <annotation>
+          <documentation>Informacoes do proprietario da empresa pessoa
+						juridica Cliente da Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeCliente" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome do cliente da Cielo que seja pessoa fisica
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="unbounded" name="listaDadosProdutoCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseListaDadosProdutosType">
+        <annotation>
+          <documentation>Produtos</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoGarantia" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeFantasia" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome fantasia do cliente pessoa juridica
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosContatoCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosContatoType" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorEcommerce" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="unbounded" name="codigoMoeda" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseCodigoMoedaType" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorMultiBandeira" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="codigoPCT" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorSecuratizacao" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorTrava" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorMoto" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosBancarioCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosBancariosType" />
+      <element minOccurs="0" maxOccurs="1" name="dadosProprietarioMobile" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosProprietarioType" />
+      <element minOccurs="0" maxOccurs="1" name="percentualAntecipacao" nillable="true" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="descricaoLimite" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorVisaVale" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorJuridico" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="valorTarifaAgendamento" nillable="true" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="quantidadePOS" nillable="true" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorSaldoConsolidado" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="codigoRamoAtividade" nillable="true" type="string">
+        <annotation>
+          <documentation>Codigo definido pelas bandeiras Visa e Mastercard
+						para identificar um ramo de atividade Tambem conhecido como MCC,
+						ele e adotado pela Cielo e por todos os adquirentes e emissores do
+						mundo para classificar o ramo de negocio dos seus clientes.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoBandeira" nillable="true" type="int" />
+      <element minOccurs="0" maxOccurs="1" name="codigoSegmento" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoECAssociada" nillable="true" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="nomeRazaoSocial" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome da razao social do Cliente Pessoa Juridica
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroCNPJ" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do CNPJ do Cliente pessoa juridica
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorCadeia" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorTransmissao" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoPagamento" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="dadosEnderecoFisicoCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosEnderecoType" />
+      <element minOccurs="0" maxOccurs="1" name="descricaoRamoAtividade" nillable="true" type="string">
+        <annotation>
+          <documentation>Descricao definido pelas bandeiras Visa e Mastercard
+						para identificar um ramo de atividade.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorRecebimentoSMS" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosEnderecoCorrespondenciaCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosEnderecoType" />
+      <element minOccurs="0" maxOccurs="1" name="codigoCategoriaAntecipacao" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoAluguelPOS" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoPeriodicidadeAntecipacaoAutomatica" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoECPrincipal" nillable="true" type="long" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorParcelado" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorMobile" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="numeroCPF" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do CPF do cliente Cielo</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoPessoa" nillable="true" type="string">
+        <annotation>
+          <documentation>Codigo adotado pelo sistema STAR para identificar o
+						tipo de pessoa (fi­sica ou juri­dica) do cliente da Cielo.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoClasseFaturamento" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoClienteAMEX" nillable="true" type="string">
+        <annotation>
+          <documentation>Codigo adotado pela American Express para
+						identificar o seu cliente que tambem e cliente da Cielo.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosSituacaoFuncionamentoCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosSituacaoFuncionamentoClienteType" />
+      <element minOccurs="0" maxOccurs="1" name="dataUltimaAlteracao" nillable="true" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="dadosContatoEnderecoCorrespondencia" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosContatoType" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorPiloto" nillable="true" type="boolean">
+        <annotation>
+          <documentation>Informacao de negocios necessaria para identificar
+						se o cliente aceitou ser elegivel a ingressar em projetoas piloto.
+						Esta informacao e gerada atraves de contrato diretamente com o
+						cliente, e por isso esta sendo adicionada ao canonico.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosContatoAdicional" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosContatoType">
+        <annotation>
+          <documentation>Informacoes do contato adicional do cliente.
+						Nao esta
+						vinculado a nenhum dos contatos anteriormente adicionados,
+						podendo
+						ser apenas um contato sem vinculo direto a um endereco.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosEnderecoContrato" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosEnderecoType">
+        <annotation>
+          <documentation>Informacaoes de endereco pertencentes ao contrato do
+						cliente.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosContatoContrato" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosContatoType">
+        <annotation>
+          <documentation>Informacoes de contato referenciadas no contrato
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeSituacaoAtividadeCliente" nillable="true" type="string">
+        <annotation>
+          <documentation>O nome da situação de atividade do cliente
+						identifica a situação atual do estabelecimento quanto a captura de
+						transações na máquina da Cielo. Exemplos de situação: EC Ativo (A)
+						EC Inativo até um ano (I) Inativo ha um ano ou mais (Y)
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorTravaARV" nillable="true" type="boolean">
+        <annotation>
+          <documentation>Indica se estabelecimento comercial possui permissao
+						para aderir produto ARV
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosEnderecoSuprimento" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosEnderecoType">
+        <annotation>
+          <documentation>Endereco utilizado para entrega dos suprimentos ao
+						cliente.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeTipoCadeia" nillable="true" type="string">
+        <annotation>
+          <documentation>identifica o tipo de cadeia quanto a centralização:
+						CENTRALIZADA, DESCENTRALIZADA ou INDIVIDUAL.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeSituacaoAtivacaoCliente" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome da situação de ativação do cliente durante o
+						ciclo de vida do cliente na Cielo, ou seja, reflete a situação do
+						cliente desde o início da afiliação até o encerramento do
+						relacionamento com a Cielo.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosContatoSMSCliente" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosContatoType">
+        <annotation>
+          <documentation>Dados de contato do cliente para envio de SMS.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoStatusCobanCaptura" nillable="true" type="string">
+        <annotation>
+          <documentation>Codigo que identifica a situacao do EC para operar
+						como Correspondente Bancario (COBAN).
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoStatusCobanCaptura" nillable="true" type="string">
+        <annotation>
+          <documentation>Descricao do codigo que identifica a situacao do EC
+						para operar como Correspondente Bancario (COBAN).
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoPagamentoRecorrente" nillable="true" type="string">
+        <annotation>
+          <documentation>Identifica a opcao de pagamento recorrente que o o
+						cliente (EC) esta habilitado.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoPagamentoRecorrente" nillable="true" type="string">
+        <annotation>
+          <documentation>Descricao da opcao de pagamento recorrente que o o
+						cliente (EC) esta habilitado.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoBancoCoban" nillable="true" type="string">
+        <annotation>
+          <documentation>Codigo do Banco no qual o EC atua como Coban.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeBancoCoban" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome do Banco no qual o EC atua como Coban.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorBloqueioPagamento" nillable="true" type="boolean">
+        <annotation>
+          <documentation>Indicador de bloqueio de pagamento (Sim ou nao)
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="motivoRetornoCodigo" nillable="true" type="integer">
+        <annotation>
+          <documentation>Codigo que indica os tipos de bloqueio de pagamento
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="motivoRetornoDescricao" nillable="true" type="string">
+        <annotation>
+          <documentation>Descricao do motivo de bloqueio de pagamento
+						Ex:
+						Valores em aberto
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosEnderecoPontoVenda" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosEnderecoType">
+        <annotation>
+          <documentation>Endereco Ponto de Venda</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosProprietarioType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="nomeProprietario" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome do proprietario do estabelecimento comercial
+						Cliente da Cielo.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroCPFProprietario" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do CPF do proprietario</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dataNascimentoProprietario" nillable="true" type="date">
+        <annotation>
+          <documentation>Data de nascimento do proprietario</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="listaDadosContatoProprietario" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseListaDadosContatoProprietarioType">
+        <annotation>
+          <documentation>Informacoes de contatos referentes a este
+						proprietario
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseListaDadosProdutosType">
+    <sequence>
+      <sequence>
+        <element minOccurs="0" maxOccurs="unbounded" name="dadosProdutoCliente" type="tns:ConsultarDadosCadastraisClienteResponseDadosProdutosType" />
+      </sequence>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosProdutosType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="nomeProduto" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="dadosBancarios" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosBancariosType" />
+      <element minOccurs="0" maxOccurs="1" name="codigoProduto" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="numeroProduto" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="percentualTaxa" nillable="true" type="decimal" />
+      <element minOccurs="0" maxOccurs="1" name="quantidadeDiasPrazo" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="descricaoProduto" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="dadosTarifa" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseDadosTarifaType" />
+      <element minOccurs="0" maxOccurs="1" name="codigoEmpresa" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="numeroEmpresa" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoBandeira" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="numeroBandeira" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="codigoFormaPagamento" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorSecuratizacao" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="indicadorSecuratizacaoAntecipacao" nillable="true" type="boolean" />
+      <element minOccurs="0" maxOccurs="1" name="codigoLiquidacao" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeTipoCobranca" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeSituacaoBandeira" nillable="true" type="string">
+        <annotation>
+          <documentation>Situacao na qual a bandeira esta para este produto.
+						Dominio:
+						Habilitada
+						Desabilitada
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeBandeira" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome da bandeira.
+						Exemplos: VISA; MASTER; AMEX;
+						TICKET; SODEXO; SOROCRED; ELO;etc.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeTipoLiquidacao" nillable="true" type="string">
+        <annotation>
+          <documentation>Informa o responsavel pela liquidacao das operacoes
+						para o cliente: Adquirencia (Cielo) ou Van/MultiVan (Van
+						responsavel).
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dataHabilitacaoProdutoCliente" nillable="true" type="date">
+        <annotation>
+          <documentation>Data de habilitação do produto contratado pelo
+						cliente
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="percentualDesconto" nillable="true" type="decimal">
+        <annotation>
+          <documentation>Valor percentual dado de desconto ao produto
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorVendaDigitada" nillable="true" type="boolean">
+        <annotation>
+          <documentation>indicador que indica se este produto permite
+						transacoes de venda digitadas
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorVendaDigitadaHabilitada" nillable="true" type="boolean">
+        <annotation>
+          <documentation>indicador que indica se para um determinado cliente
+						este produto esta habilitado para gerar transacoes de venda
+						digitadas.
+						Este indicador podera ser positivo somente se o
+						indicador que
+						demonstra que a venda digitada esta com seu valor
+						verdadeiro.
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseListaDadosContatoProprietarioType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosContatoProprietario" type="tns:ConsultarDadosCadastraisClienteResponseDadosContatoType" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosContatoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="nomeContato" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome escolhido pelo Cliente da Cielo para ser o
+						ponto de contato entre as partes.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroDDITelefoneContato" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do DDI do telefone do contato do cliente com
+						a Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroDDDTelefoneContato" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do DDD do telefone do contato do cliente com
+						a Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroTelefoneContato" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do telefone do contato do cliente com a Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroDDIFax" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do DDI do fax do contato do cliente com a
+						Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroFax" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do Fax do contato do cliente com a Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroDDDFax" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero do DDD do fax do contato do cliente com a
+						Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeEmailContato" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome do endereco de email do contato do cliente com
+						a Cielo
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="tipoContato" nillable="true" type="string">
+        <annotation>
+          <documentation>Tipo de Contato</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="tipoTelefone" nillable="true" type="string">
+        <annotation>
+          <documentation>Tipo Telefone ( Fixo, Mobile, etc)</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <simpleType name="ConsultarDadosCadastraisClienteResponseCodigoMoedaType">
+    <annotation>
+      <documentation>ISO 4217 - Padrao internacional que define codigos de
+				tres letras para as moedas correntes
+			</documentation>
+    </annotation>
+    <restriction base="string">
+      <enumeration value="AED">
+        <annotation>
+          <documentation>
+						DIRHAM/EMIR.ARABE - EMIRADOS ARABES UNIDOS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="AFN">
+        <annotation>
+          <documentation>
+						AFEGANE AFEGANIST - AFEGANISTAO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ALL">
+        <annotation>
+          <documentation>
+						LEK ALBANIA REP - ALBANIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="AMD">
+        <annotation>
+          <documentation>
+						DRAM ARMENIA REP - ARMENIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ANG">
+        <annotation>
+          <documentation>
+						GUILDER ANTILHAS HOLANDESAS - ANTILHAS
+						HOLANDESAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="AOA">
+        <annotation>
+          <documentation>
+						KWANZA/ANGOLA - ANGOLA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ARS">
+        <annotation>
+          <documentation>
+						PESO/ARGENTINA - ARGENTINA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="AUD">
+        <annotation>
+          <documentation>
+						DOLAR AUSTRALIANO - AUSTRALIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="AWG">
+        <annotation>
+          <documentation>FLORIM/ARUBA - ARUBA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="AZN">
+        <annotation>
+          <documentation>
+						MANAT ARZEBAIJAO - AZERBAIJAO, REPUBLICA DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BAM">
+        <annotation>
+          <documentation>
+						MARCO CONV BOSNIA - BOSNIA*HERZEGOVINA
+						(REPUBLICA DA)
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BBD">
+        <annotation>
+          <documentation>
+						DOLAR/BARBADOS - BARBADOS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BDT">
+        <annotation>
+          <documentation>
+						TACA/BANGLADESH - BANGLADESH
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BGN">
+        <annotation>
+          <documentation>
+						LEV/BULGARIA, REP - BULGARIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BHD">
+        <annotation>
+          <documentation>
+						DINAR/BAHREIN - BAHREIN, ILHAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BIF">
+        <annotation>
+          <documentation>
+						FRANCO/BURUNDI - BURUNDI
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BMD">
+        <annotation>
+          <documentation>
+						DOLAR/BERMUDAS - BERMUDAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BND">
+        <annotation>
+          <documentation>DOLAR BRUNEI - BRUNEI</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BOB">
+        <annotation>
+          <documentation>
+						BOLIVIANO/BOLIVIA - BOLIVIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BRL">
+        <annotation>
+          <documentation>REAL BRASIL - BRASIL</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BSD">
+        <annotation>
+          <documentation>
+						DOLAR/BAHAMAS - BAHAMAS, ILHAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BTN">
+        <annotation>
+          <documentation>
+						NGULTRUM/BUTAO - BUTAO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BWP">
+        <annotation>
+          <documentation>
+						PULA/BOTSWANA - BOTSUANA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BYR">
+        <annotation>
+          <documentation>
+						RUBLO BELARUS - BELARUS, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="BZD">
+        <annotation>
+          <documentation>DOLAR/BELIZE - BELIZE</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CAD">
+        <annotation>
+          <documentation>
+						DOLAR CANADENSE - CANADA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CDF">
+        <annotation>
+          <documentation>
+						FRANCO CONGOLES - CONGO, REPUBLICA DEMOCRATICA DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CHF">
+        <annotation>
+          <documentation>FRANCO SUICO - SUICA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CLF">
+        <annotation>
+          <documentation>
+						UNID FOMENTO CHIL - CHILE
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CLP">
+        <annotation>
+          <documentation>PESO CHILE - CHILE</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CNH">
+        <annotation>
+          <documentation>
+						RENMINBI HONG KONG - *
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CNY">
+        <annotation>
+          <documentation>
+						RENMIMBI IUAN - CHINA, REPUBLICA POPULAR
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="COP">
+        <annotation>
+          <documentation>
+						PESO/COLOMBIA - COLOMBIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CRC">
+        <annotation>
+          <documentation>
+						COLON/COSTA RICA - COSTA RICA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CUP">
+        <annotation>
+          <documentation>PESO/CUBA - CUBA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CVE">
+        <annotation>
+          <documentation>
+						ESCUDO CABO VERDE - CABO VERDE, REPUBLICA DE
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="CZK">
+        <annotation>
+          <documentation>
+						COROA TCHECA - TCHECA, REPUBLICA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DJF">
+        <annotation>
+          <documentation>
+						FRANCO/DJIBUTI - DJIBUTI
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DKK">
+        <annotation>
+          <documentation>
+						COROA DINAMARQUESA - DINAMARCA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DOP">
+        <annotation>
+          <documentation>
+						PESO/REP. DOMINIC - REPUBLICA DOMINICANA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="DZD">
+        <annotation>
+          <documentation>
+						DINAR ARGELINO - ARGELIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="EGP">
+        <annotation>
+          <documentation>LIBRA/EGITO - EGITO</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ERN">
+        <annotation>
+          <documentation>
+						NAKFA ERITREIA - ERITREIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ETB">
+        <annotation>
+          <documentation>
+						BIRR/ETIOPIA - ETIOPIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="EUR">
+        <annotation>
+          <documentation>EURO - *</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="FJD">
+        <annotation>
+          <documentation>DOLAR FIJI - FIJI</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="FKP">
+        <annotation>
+          <documentation>
+						LIBRA/FALKLAND - FALKLAND (ILHAS MALVINAS)
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GBP">
+        <annotation>
+          <documentation>
+						LIBRA ESTERLINA - REINO UNIDO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GEL">
+        <annotation>
+          <documentation>
+						LARI GEORGIA - GEORGIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GHS">
+        <annotation>
+          <documentation>CEDI GANA - GANA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GIP">
+        <annotation>
+          <documentation>
+						LIBRA/GIBRALTAR - GIBRALTAR
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GMD">
+        <annotation>
+          <documentation>
+						DALASI/GAMBIA - GAMBIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GNF">
+        <annotation>
+          <documentation>FRANCO/GUINE - GUINE</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GTQ">
+        <annotation>
+          <documentation>
+						QUETZAL/GUATEMALA - GUATEMALA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GWP">
+        <annotation>
+          <documentation>
+						PESO/GUINE BISSAU - GUINE*BISSAU
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="GYD">
+        <annotation>
+          <documentation>
+						DOLAR DA GUIANA - GUIANA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="HKD">
+        <annotation>
+          <documentation>
+						DOLAR HONG KONG - HONG KONG
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="HNL">
+        <annotation>
+          <documentation>
+						LEMPIRA/HONDURAS - HONDURAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="HRK">
+        <annotation>
+          <documentation>
+						KUNA/CROACIA - CROACIA (REPUBLICA DA)
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="HTG">
+        <annotation>
+          <documentation>GOURDE/HAITI - HAITI</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="HUF">
+        <annotation>
+          <documentation>
+						FORINT/HUNGRIA - HUNGRIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="IDR">
+        <annotation>
+          <documentation>
+						RUPIA/INDONESIA - INDONESIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ILS">
+        <annotation>
+          <documentation>
+						SHEKEL/ISRAEL - ISRAEL
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="INR">
+        <annotation>
+          <documentation>RUPIA/INDIA - INDIA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="IQD">
+        <annotation>
+          <documentation>DINAR/IRAQUE - IRAQUE</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="IRR">
+        <annotation>
+          <documentation>
+						RIAL/IRAN, REP - IRA, REPUBLICA ISLAMICA DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ISK">
+        <annotation>
+          <documentation>
+						COROA ISLND/ISLAN - ISLANDIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="JMD">
+        <annotation>
+          <documentation>
+						DOLAR/JAMAICA - JAMAICA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="JOD">
+        <annotation>
+          <documentation>
+						DINAR/JORDANIA - JORDANIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="JPY">
+        <annotation>
+          <documentation>IENE - JAPAO</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KES">
+        <annotation>
+          <documentation>XELIM/QUENIA - QUENIA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KGS">
+        <annotation>
+          <documentation>
+						SOM QUIRGUISTAO - QUIRGUIZ, REPUBLICA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KHR">
+        <annotation>
+          <documentation>
+						RIEL/CAMBOJA - CAMBOJA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KMF">
+        <annotation>
+          <documentation>
+						FRANCO/COMORES - COMORES, ILHAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KPW">
+        <annotation>
+          <documentation>
+						WON/COREIA NORTE - COREIA, REP.POP.DEMOCRATICA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KRW">
+        <annotation>
+          <documentation>
+						WON COREIA SUL - COREIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KWD">
+        <annotation>
+          <documentation>DINAR/KWAIT - COVEITE</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KYD">
+        <annotation>
+          <documentation>
+						DOLAR CAYMAN - CAYMAN, ILHAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="KZT">
+        <annotation>
+          <documentation>
+						TENGE CAZAQUISTAO - CAZAQUISTAO, REPUBLICA DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LAK">
+        <annotation>
+          <documentation>
+						QUIPE/LAOS, REP - LAOS, REP.POP.DEMOCR.DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LBP">
+        <annotation>
+          <documentation>LIBRA/LIBANO - LIBANO</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LKR">
+        <annotation>
+          <documentation>
+						RUPIA/SRI LANKA - SRI LANKA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LRD">
+        <annotation>
+          <documentation>
+						DOLAR LIBERIA - LIBERIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LSL">
+        <annotation>
+          <documentation>LOTI/LESOTO - LESOTO</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LTL">
+        <annotation>
+          <documentation>
+						LITA/LITUANIA - LITUANIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LVL">
+        <annotation>
+          <documentation>
+						LAT/LETONIA, REP - LETONIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="LYD">
+        <annotation>
+          <documentation>DINAR/LIBIA - LIBIA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MAD">
+        <annotation>
+          <documentation>
+						DIRHAM/MARROCOS - MARROCOS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MDL">
+        <annotation>
+          <documentation>
+						LEU/MOLDAVIA, REP - MOLDAVIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MGA">
+        <annotation>
+          <documentation>
+						ARIARY MADAGASCAR - MADAGASCAR
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MKD">
+        <annotation>
+          <documentation>
+						DINAR/MACEDONIA - MACEDONIA, ANT.REP.IUGOSLAVA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MMK">
+        <annotation>
+          <documentation>
+						QUIATE/BIRMANIA - MIANMAR (BIRMANIA)
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MNT">
+        <annotation>
+          <documentation>
+						TUGRIK/MONGOLIA - MONGOLIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MOP">
+        <annotation>
+          <documentation>PATACA/MACAU - MACAU</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MRO">
+        <annotation>
+          <documentation>
+						UGUIA MAURITANIA - MAURITANIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MUR">
+        <annotation>
+          <documentation>
+						RUPIA/MAURICIO - MAURICIO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MVR">
+        <annotation>
+          <documentation>
+						RUFIA/MALDIVAS - MALDIVAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MWK">
+        <annotation>
+          <documentation>
+						QUACHA/MALAVI - MALAVI
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MXN">
+        <annotation>
+          <documentation>PESO/MEXICO - MEXICO</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MYR">
+        <annotation>
+          <documentation>
+						RINGGIT/MALASIA - MALASIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="MZN">
+        <annotation>
+          <documentation>
+						NOVA METICAL/MOCA - MOCAMBIQUE
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="NAD">
+        <annotation>
+          <documentation>
+						DOLAR DA NAMIBIA - NAMIBIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="NGN">
+        <annotation>
+          <documentation>
+						NAIRA/NIGERIA - NIGERIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="NIO">
+        <annotation>
+          <documentation>
+						CORDOBA OURO - NICARAGUA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="NOK">
+        <annotation>
+          <documentation>
+						COROA NORUEGUESA - NORUEGA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="NPR">
+        <annotation>
+          <documentation>RUPIA/NEPAL - NEPAL</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="NZD">
+        <annotation>
+          <documentation>
+						DOLAR/NOVA ZELAND - NOVA ZELANDIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="OMR">
+        <annotation>
+          <documentation>RIAL/OMA - OMA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="PAB">
+        <annotation>
+          <documentation>
+						BALBOA/PANAMA - PANAMA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="PEN">
+        <annotation>
+          <documentation>NOVO SOL/PERU - PERU</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="PGK">
+        <annotation>
+          <documentation>
+						KINA/PAPUA N GUIN - PAPUA NOVA GUINE
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="PHP">
+        <annotation>
+          <documentation>
+						PESO/FILIPINAS - FILIPINAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="PKR">
+        <annotation>
+          <documentation>
+						RUPIA/PAQUISTAO - PAQUISTAO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="PLN">
+        <annotation>
+          <documentation>
+						ZLOTY/POLONIA - POLONIA, REPUBLICA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="PYG">
+        <annotation>
+          <documentation>
+						GUARANI/PARAGUAI - PARAGUAI
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="QAR">
+        <annotation>
+          <documentation>RIAL/CATAR - CATAR</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="RON">
+        <annotation>
+          <documentation>
+						NOVO LEU/ROMENIA - ROMENIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="RSD">
+        <annotation>
+          <documentation>
+						DINAR SERVIO SERVIA - SERVIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="RUB">
+        <annotation>
+          <documentation>
+						RUBLO/RUSSIA - RUSSIA, FEDERACAO DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="RWF">
+        <annotation>
+          <documentation>
+						FRANCO/RUANDA - RUANDA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SAR">
+        <annotation>
+          <documentation>
+						RIAL/ARAB SAUDITA - ARABIA SAUDITA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SBD">
+        <annotation>
+          <documentation>
+						DOLAR IL SALOMAO - SALOMAO, ILHAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SCR">
+        <annotation>
+          <documentation>
+						RUPIA/SEYCHELES - SEYCHELLES
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SDG">
+        <annotation>
+          <documentation>
+						NOVA LIBRA SUDANESA - SUDAO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SDR">
+        <annotation>
+          <documentation>DIREITO ESPECIAL - *</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SEK">
+        <annotation>
+          <documentation>COROA SUECA - SUECIA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SGD">
+        <annotation>
+          <documentation>
+						DOLAR CINGAPURA - CINGAPURA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SHP">
+        <annotation>
+          <documentation>
+						LIBRA/STA HELENA - SANTA HELENA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SLL">
+        <annotation>
+          <documentation>
+						LEONE/SERRA LEOA - SERRA LEOA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SOS">
+        <annotation>
+          <documentation>
+						XELIM/SOMALIA - SOMALIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SRD">
+        <annotation>
+          <documentation>
+						DOLAR/SURINAME - SURINAME
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SSP">
+        <annotation>
+          <documentation>
+						LIBRA SUL SUDANESA - SUDAO DO SUL
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="STD">
+        <annotation>
+          <documentation>
+						DOBRA S TOME PRIN - SAO TOME E PRINCIPE, ILHAS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SVC">
+        <annotation>
+          <documentation>
+						COLON/EL SALVADOR - EL SALVADOR
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SYP">
+        <annotation>
+          <documentation>
+						LIBRA/SIRIA, REP - SIRIA, REPUBLICA ARABE DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="SZL">
+        <annotation>
+          <documentation>
+						LILANGENI/SUAZIL - SUAZILANDIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="THB">
+        <annotation>
+          <documentation>
+						BATH/TAILANDIA - TAILANDIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TJS">
+        <annotation>
+          <documentation>
+						SOMONI TADJIQUISTAO - TADJIQUISTAO, REPUBLICA DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TMT">
+        <annotation>
+          <documentation>
+						NOVO MANAT TURCOM - TURCOMENISTAO, REPUBLICA DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TND">
+        <annotation>
+          <documentation>
+						DINAR/TUNISIA - TUNISIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TOP">
+        <annotation>
+          <documentation>PAANGA/TONGA - TONGA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TRY">
+        <annotation>
+          <documentation>
+						NOVA LIRA/TURQUIA - TURQUIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TTD">
+        <annotation>
+          <documentation>
+						DOLAR/TRIN. TOBAG - TRINIDAD E TOBAGO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TWD">
+        <annotation>
+          <documentation>
+						NOVO DOLAR/TAIWAN - FORMOSA (TAIWAN)
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="TZS">
+        <annotation>
+          <documentation>
+						XELIM/TANZANIA - TANZANIA, REP.UNIDA DA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="UAH">
+        <annotation>
+          <documentation>
+						HRYVNIA UCRANIA - UCRANIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="UGX">
+        <annotation>
+          <documentation>XELIM/UGANDA - UGANDA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="USD">
+        <annotation>
+          <documentation>
+						DOLAR DOS EUA - ESTADOS UNIDOS
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="UYU">
+        <annotation>
+          <documentation>
+						PESO/URUGUAIO - URUGUAI
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="UZS">
+        <annotation>
+          <documentation>
+						SOM UZBEQUISTAO - UZBEQUISTAO, REPUBLICA DO
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="VEF">
+        <annotation>
+          <documentation>
+						BOLIVAR VEN - VENEZUELA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="VND">
+        <annotation>
+          <documentation>
+						DONGUE/VIETNAN - VIETNA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="VUV">
+        <annotation>
+          <documentation>
+						VATU VANUATU - VANUATU
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="WST">
+        <annotation>
+          <documentation>TALA SAMOA OC - SAMOA</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="XAF">
+        <annotation>
+          <documentation>FRANCO CFA BEAC - *</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="XAU">
+        <annotation>
+          <documentation>DOLAR OURO - *</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="XCD">
+        <annotation>
+          <documentation>
+						DOLAR CARIBE ORIENTAL - *
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="XEU">
+        <annotation>
+          <documentation>UNID.MONET.EUROP. - *</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="XOF">
+        <annotation>
+          <documentation>FRANCO CFA BCEAO - *</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="XPF">
+        <annotation>
+          <documentation>
+						FRANCO CFP - POLINESIA FRANCESA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="YER">
+        <annotation>
+          <documentation>RIAL/IEMEN - IEMEN</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ZAR">
+        <annotation>
+          <documentation>
+						RANDE/AFRICA SUL - AFRICA DO SUL
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ZMW">
+        <annotation>
+          <documentation>
+						QUACHA ZAMBIA - ZAMBIA
+					</documentation>
+        </annotation>
+      </enumeration>
+      <enumeration value="ZWL">
+        <annotation>
+          <documentation>
+						DOLAR ZIMBABUE - ZIMBABUE
+					</documentation>
+        </annotation>
+      </enumeration>
+    </restriction>
+  </simpleType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosBancariosType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoBanco" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="numeroAgencia" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="numeroContaCorrente" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroDACAgencia" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroDACContaCorrente" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="unbounded" name="nomeBandeiraTrava" nillable="true" type="string">
+        <annotation>
+          <documentation>Lista com o nome das bandeiras que estao travadas
+						neste domicilio bancarios
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeBanco" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome que identifica o banco dentro do sistema de
+						compensacao nacional controlado pelo BACEN.
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosTarifaType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoTarifa" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="nomeTipoTarifa" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="valorTarifa" nillable="true" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="valorItem" nillable="true" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="quantidadeParcelasLoja" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="quantidadeParcelasAdministradora" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="valorRemuneracao" nillable="true" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="valorTaxaGarantia" nillable="true" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="percentualTaxaGarantia" nillable="true" type="double" />
+      <element minOccurs="0" maxOccurs="1" name="codigoGarantia" nillable="true" type="integer" />
+      <element minOccurs="0" maxOccurs="1" name="percentualTaxaPadrao" nillable="true" type="double">
+        <annotation>
+          <documentation>Percentual da taxa mdr (merchant discount rate)
+						padrao definida para o produto.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="percentualTaxaMatriz" nillable="true" type="double">
+        <annotation>
+          <documentation>Percentual da taxa mdr (merchant discount rate) do
+						produto negociado para a matriz (para a cadeia centralizada).
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="percentualTaxaMinima" nillable="true" type="double">
+        <annotation>
+          <documentation>Percentual de taxa mínima aceita para contratação do
+						produto.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="percentualTaxaMaxima" nillable="true" type="double">
+        <annotation>
+          <documentation>Percentual de taxa máxima aceita para contratação do
+						produto
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="listaDadosFaixasTaxaSegmentado" nillable="true" type="tns:ConsultarDadosCadastraisClienteResponseListaDadosFaixasTaxaSegmentadoType">
+        <annotation>
+          <documentation>Lista de faixa de taxas de um produto parcelado
+						contratado pelo cliente.
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseListaDadosFaixasTaxaSegmentadoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosFaixasTaxaSegmentado" type="tns:ConsultarDadosCadastraisClienteResponseDadosFaixaTaxaSegmentadoType" />
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosFaixaTaxaSegmentadoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="percentualTaxaFaixa" nillable="true" type="double">
+        <annotation>
+          <documentation>Valor da taxa correspondente a uma faixa de parcelas
+						do produto contratado pelo cliente ou ofertado para o cliente.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroInicialParcelaFaixa" nillable="true" type="integer">
+        <annotation>
+          <documentation>Numero inicial da parcela da faixa para a cobrança
+						da taxa.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroFinalParcelaFaixa" nillable="true" type="integer">
+        <annotation>
+          <documentation>Numero final da parcela da faixa para a cobrança da
+						taxa.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoFaixa" nillable="true" type="integer">
+        <annotation>
+          <documentation>Codigo que identifica a faixa de taxa valida para um
+						conjunto de prestacoes de um produto parcelado a ser ofertado para
+						o cliente.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="percentualDescontoSegmentado" nillable="true" type="double">
+        <annotation>
+          <documentation>Valor do descontocorrespondente a uma faixa de
+						parcelas do produto contratado pelo cliente ou ofertado para o
+						cliente.
+						No documento funcional esta sendo solicitado este campo
+						para que
+						quando for parcelado segmentado este campo deve ser somado
+						com a
+						taxa atual das parcelas do cliente.
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="percentualPadraoTaxaFaixa" nillable="true" type="double">
+        <annotation>
+          <documentation>Percentual da taxa padrão correspondente a uma faixa
+						de parcelas do produto.
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosEnderecoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="nomeLogradouro" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="descricaoComplementoEndereco" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeBairro" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeCidade" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="siglaEstado" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroCEP" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="numeroLogradouro" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeTipoLogradouro" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome do tipo do logradouro aplicado ao endereco.
+						Exemplos:
+						Rua
+						Avenida
+						Praca
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomePais" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome do pais no qual o endereco existe. exemplos:
+						Brasil
+						Argentina
+						Inglaterra
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeComplementoCEP" nillable="true" type="string">
+        <annotation>
+          <documentation>Numero Complemento CEP</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroComplementoCEP" nillable="true" type="string">
+        <annotation>
+          <documentation>Trecho Logradouro. (range)</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="trechoLogradouro" nillable="true" type="string">
+        <annotation>
+          <documentation>Trecho Logradouro</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="unbounded" name="categoriaEndereco" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome Categoria do Endereco</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="unbounded" name="contatoEndereco" nillable="true" type="string">
+        <annotation>
+          <documentation>Nome do contato principal do endereco
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="unbounded" name="telefoneContato" nillable="true" type="string">
+        <annotation>
+          <documentation>Telefone do contato principal do endereco
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarDadosCadastraisClienteResponseDadosSituacaoFuncionamentoClienteType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoSituacaoCliente" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="dataReabertura" nillable="true" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="dataFechamento" nillable="true" type="date" />
+      <element minOccurs="0" maxOccurs="1" name="codigoMotivoFechamento" nillable="true" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="nomeMotivoFechamento" nillable="true" type="string">
+        <annotation>
+          <documentation>Descricao do motivo de fechamento
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+</schema>

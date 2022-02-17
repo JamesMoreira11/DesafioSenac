@@ -1,0 +1,30 @@
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\EncriptaDecriptaDotNet.exe.config
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\EncriptaDecriptaDotNet.exe
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\EncriptaDecriptaDotNet.pdb
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\CieloGtecDAL.dll
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\LogviewHelper.dll
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\CieloGtecDAL.pdb
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\LogviewHelper.pdb
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csprojAssemblyReference.cache
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.EncriptaDecripta.resources
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.Properties.Resources.resources
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csproj.GenerateResource.cache
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csproj.CoreCompileInputs.cache
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csproj.CopyComplete
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecriptaDotNet.exe
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecriptaDotNet.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\EncriptaDecriptaDotNet.exe.config
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\EncriptaDecriptaDotNet.exe
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\EncriptaDecriptaDotNet.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\CieloGtecDAL.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\CieloGtecDAL.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\bin\x86\Release\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.EncriptaDecripta.resources
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.Properties.Resources.resources
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csproj.GenerateResource.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecripta.csproj.CopyComplete
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecriptaDotNet.exe
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\EncriptaDecripta\obj\x86\Release\EncriptaDecriptaDotNet.pdb

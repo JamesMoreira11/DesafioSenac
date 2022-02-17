@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileMap>
+  <Field Name="CodigoMensagem"              Start="1" Length="4"/>
+  <Field Name="ChaveIdentificacaoGtec"      Start="5" Length="36"/>
+  <Field Name="IdentificadorOrigemChamada"  Start="41" Length="4"/>
+  <Field Name="OpcaoOperacao"               Start="45" Length="1"/>
+  <Field Name="UsuarioSistemaRedes"         Start="46" Length="8"/>
+  <Field Name="UsuarioSistemaOrigem"        Start="54" Length="8"/>
+  <Field Name="CodigoRetorno"               Start="62" Length="4"/>
+  <Field Name="MensagemRetorno"             Start="66" Length="80"/>
+  <Field Name="CodigoEstabelecimento"       Start="146" Length="10"/>
+  <Field Name="Terminal"                    Start="156" Length="8"/>
+  <Field Name="Versao"                      Start="164" Length="2"/>
+  <Field Name="Loja"                        Start="166" Length="4"/>
+  <Field Name="NumeroPaginacao"             Start="170" Length="2"/>
+  <Field Name="TerminalRetorno"             Start="172" Length="8"/>
+  <Field Name="VersaoRetorno"               Start="180" Length="2"/>
+  <Field Name="LojaRetorno"                 Start="182" Length="4"/>
+  <Field Name="NumeroRetorno"               Start="186" Length="2"/>
+</FileMap>

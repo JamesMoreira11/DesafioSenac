@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileMap>
+  <Field Name="CodigoMensagem" 						            Start="1 " Length="4"/>
+  <Field Name="ChaveIdentificacaoGtec" 				        Start="5 " Length="36"/>
+  <Field Name="IdentificadorOrigemChamada" 			      Start="41 " Length="4"/>
+  <Field Name="OpcaoOperacao" 						            Start="45 " Length="1"/>
+  <Field Name="UsuarioSsitemaRedes" 					        Start="46 " Length="8"/>
+  <Field Name="UsuarioSistemaOrigem" 					        Start="54 " Length="8"/>
+  <Field Name="CodigoRetorno" 						            Start="62 " Length="4"/>
+  <Field Name="MensagemRetorno" 						          Start="66 " Length="80"/>
+  <Field Name="NumeroTerminal" 						            Start="146 " Length="8"/>
+  <Field Name="CodigoEstabelecimentoComercial" 		    Start="154 " Length="12"/>
+  <Field Name="LojaEstabelecimentoComercial" 			    Start="166 " Length="4"/>
+  <Field Name="TipoTecnologia" 						            Start="170 " Length="3"/>
+  <Field Name="CodigoRetorno1" 						            Start="173 " Length="4"/>
+  <Field Name="MensagemRetorno1" 						          Start="177 " Length="70"/>
+  <Field Name="OperadorLogistico" 					          Start="247 " Length="1"/>
+  <Field Name="CodigoSolicitaçãoAtualizacaoPaginas" 	Start="248 " Length="1"/>
+  <Field Name="DataSolicitacaoAtualizacaoPaginas" 	  Start="249 " Length="8"/>
+  <Field Name="HoraSolicitacaoAtualizacaoPaginas" 	  Start="257 " Length="1"/>
+  <Field Name="TipoTerminal" 							            Start="258 " Length="2"/>
+  <Field Name="IndicadorBloqueioTerminal" 			      Start="260 " Length="1"/>
+  <Field Name="QuantidadePINPAD" 						          Start="261 " Length="4"/>
+  <Field Name="EspacoVago" 							              Start="265 " Length="1456"/>  
+</FileMap>

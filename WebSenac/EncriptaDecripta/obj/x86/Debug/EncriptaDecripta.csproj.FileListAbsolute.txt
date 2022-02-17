@@ -1,0 +1,15 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\bin\x86\Debug\EncriptaDecriptaDotNet.exe.config
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\bin\x86\Debug\EncriptaDecriptaDotNet.exe
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\bin\x86\Debug\EncriptaDecriptaDotNet.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\bin\x86\Debug\CieloGtecDAL.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\bin\x86\Debug\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\bin\x86\Debug\CieloGtecDAL.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\bin\x86\Debug\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecripta.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecripta.EncriptaDecripta.resources
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecripta.Properties.Resources.resources
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecripta.csproj.GenerateResource.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecripta.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecripta.csproj.CopyComplete
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecriptaDotNet.exe
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\EncriptaDecripta\obj\x86\Debug\EncriptaDecriptaDotNet.pdb

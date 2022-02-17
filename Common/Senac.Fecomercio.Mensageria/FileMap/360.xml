@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileMap>
+  <Field Name="CodigoMensagem" Start="0" Length="3"/>
+  <Field Name="CodigoSolicitante" Start="3" Length="4"/>
+  <Field Name="TerminalChamador" Start="7" Length="4"/>
+  <Field Name="EstabelecimentoPesquisar" Start="11" Length="10"/>
+  <Field Name="EventoPesquisar" Start="21" Length="4"/>
+  <Field Name="DependenciaPesquisar" Start="25" Length="4"/>
+  <Field Name="ReferenciaPesquisar" Start="29" Length="7"/>
+  <Field Name="StatusPesquisar" Start="36" Length="1"/>
+  <Field Name="DataInicioPesquisa" Start="37" Length="6"/>
+  <Field Name="HoraInicioPesquisa" Start="43" Length="4"/>
+  <Field Name="DataFinalPesquisa" Start="47" Length="6"/>
+  <Field Name="HoraFinalPesquisa" Start="53" Length="4"/>
+
+  <Field Name="Estabelecimento01" Start="57" Length="10"/>
+  <Field Name="Evento01" Start="67" Length="4"/>
+  <Field Name="Referencia01" Start="71" Length="7"/>
+  <Field Name="DataReferencia01" Start="78" Length="6"/>
+  <Field Name="HoraReferencia01" Start="84" Length="4"/>
+  <Field Name="DataFollow01" Start="88" Length="6"/>
+  <Field Name="DataSolucao01" Start="94" Length="6"/>
+  <Field Name="Dependencia01" Start="100" Length="4"/>
+  <Field Name="StatusReferencia01" Start="104" Length="1"/>
+
+  <Field Name="Estabelecimento02" Start="105" Length="10"/>
+  <Field Name="Evento02" Start="115" Length="4"/>
+  <Field Name="Referencia02" Start="119" Length="7"/>
+  <Field Name="DataReferencia02" Start="126" Length="6"/>
+  <Field Name="HoraReferencia02" Start="132" Length="4"/>
+  <Field Name="DataFollow02" Start="136" Length="6"/>
+  <Field Name="DataSolucao02" Start="142" Length="6"/>
+  <Field Name="Dependencia02" Start="148" Length="4"/>
+  <Field Name="StatusReferencia02" Start="152" Length="1"/>
+
+  <Field Name="Estabelecimento03" Start="153" Length="10"/>
+  <Field Name="Evento03" Start="163" Length="4"/>
+  <Field Name="Referencia03" Start="167" Length="7"/>
+  <Field Name="DataReferencia03" Start="174" Length="6"/>
+  <Field Name="HoraReferencia03" Start="180" Length="4"/>
+  <Field Name="DataFollow03" Start="184" Length="6"/>
+  <Field Name="DataSolucao03" Start="190" Length="6"/>
+  <Field Name="Dependencia03" Start="196" Length="4"/>
+  <Field Name="StatusReferencia03" Start="200" Length="1"/>
+
+  <Field Name="Estabelecimento04" Start="201" Length="10"/>
+  <Field Name="Evento04" Start="211" Length="4"/>
+  <Field Name="Referencia04" Start="215" Length="7"/>
+  <Field Name="DataReferencia04" Start="222" Length="6"/>
+  <Field Name="HoraReferencia04" Start="228" Length="4"/>
+  <Field Name="DataFollow04" Start="232" Length="6"/>
+  <Field Name="DataSolucao04" Start="238" Length="6"/>
+  <Field Name="Dependencia04" Start="244" Length="4"/>
+  <Field Name="StatusReferencia04" Start="248" Length="1"/>
+
+  <Field Name="Estabelecimento05" Start="249" Length="10"/>
+  <Field Name="Evento05" Start="259" Length="4"/>
+  <Field Name="Referencia05" Start="263" Length="7"/>
+  <Field Name="DataReferencia05" Start="270" Length="6"/>
+  <Field Name="HoraReferencia05" Start="276" Length="4"/>
+  <Field Name="DataFollow05" Start="280" Length="6"/>
+  <Field Name="DataSolucao05" Start="286" Length="6"/>
+  <Field Name="Dependencia05" Start="292" Length="4"/>
+  <Field Name="StatusReferencia05" Start="296" Length="1"/>
+
+  <Field Name="Estabelecimento06" Start="297" Length="10"/>
+  <Field Name="Evento06" Start="307" Length="4"/>
+  <Field Name="Referencia06" Start="311" Length="7"/>
+  <Field Name="DataReferencia06" Start="318" Length="6"/>
+  <Field Name="HoraReferencia06" Start="324" Length="4"/>
+  <Field Name="DataFollow06" Start="328" Length="6"/>
+  <Field Name="DataSolucao06" Start="334" Length="6"/>
+  <Field Name="Dependencia06" Start="340" Length="4"/>
+  <Field Name="StatusReferencia06" Start="344" Length="1"/>
+
+  <Field Name="Estabelecimento07" Start="345" Length="10"/>
+  <Field Name="Evento07" Start="355" Length="4"/>
+  <Field Name="Referencia07" Start="359" Length="7"/>
+  <Field Name="DataReferencia07" Start="366" Length="6"/>
+  <Field Name="HoraReferencia07" Start="372" Length="4"/>
+  <Field Name="DataFollow07" Start="376" Length="6"/>
+  <Field Name="DataSolucao07" Start="382" Length="6"/>
+  <Field Name="Dependencia07" Start="388" Length="4"/>
+  <Field Name="StatusReferencia07" Start="392" Length="1"/>
+
+  <Field Name="Estabelecimento08" Start="393" Length="10"/>
+  <Field Name="Evento08" Start="403" Length="4"/>
+  <Field Name="Referencia08" Start="407" Length="7"/>
+  <Field Name="DataReferencia08" Start="414" Length="6"/>
+  <Field Name="HoraReferencia08" Start="420" Length="4"/>
+  <Field Name="DataFollow08" Start="424" Length="6"/>
+  <Field Name="DataSolucao08" Start="430" Length="6"/>
+  <Field Name="Dependencia08" Start="436" Length="4"/>
+  <Field Name="StatusReferencia08" Start="440" Length="1"/>
+
+  <Field Name="Estabelecimento09" Start="441" Length="10"/>
+  <Field Name="Evento09" Start="451" Length="4"/>
+  <Field Name="Referencia09" Start="455" Length="7"/>
+  <Field Name="DataReferencia09" Start="462" Length="6"/>
+  <Field Name="HoraReferencia09" Start="468" Length="4"/>
+  <Field Name="DataFollow09" Start="472" Length="6"/>
+  <Field Name="DataSolucao09" Start="478" Length="6"/>
+  <Field Name="Dependencia09" Start="484" Length="4"/>
+  <Field Name="StatusReferencia09" Start="488" Length="1"/>
+
+  <Field Name="Estabelecimento10" Start="489" Length="10"/>
+  <Field Name="Evento10" Start="499" Length="4"/>
+  <Field Name="Referencia10" Start="503" Length="7"/>
+  <Field Name="DataReferencia10" Start="510" Length="6"/>
+  <Field Name="HoraReferencia10" Start="516" Length="4"/>
+  <Field Name="DataFollow10" Start="520" Length="6"/>
+  <Field Name="DataSolucao10" Start="526" Length="6"/>
+  <Field Name="Dependencia10" Start="532" Length="4"/>
+  <Field Name="StatusReferencia10" Start="536" Length="1"/>
+
+  <Field Name="SequenciaMensagem" Start="537" Length="4"/>
+  <!--Field Name="Filler" Start="541" Length="1379"/-->
+</FileMap>

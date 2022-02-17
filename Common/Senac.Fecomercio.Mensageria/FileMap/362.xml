@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileMap>
+  <Field Name="CodigoMensagem" Start="0" Length="3"/>
+  <Field Name="CodigoSolicitante" Start="3" Length="4"/>
+  <Field Name="TerminalChamador" Start="7" Length="4"/>
+  <Field Name="Estabelecimento" Start="11" Length="10"/>
+  <Field Name="EventoPesquisar" Start="21" Length="4"/>
+  <Field Name="Dependencia" Start="25" Length="4"/>
+  <Field Name="Referencia" Start="29" Length="7"/>
+  <Field Name="DataInicio" Start="36" Length="8"/>
+  <Field Name="DataFinal" Start="44" Length="8"/>
+  <Field Name="DependenciaNova" Start="63" Length="4"/>
+  <Field Name="MensagemAcao" Start="188" Length="79"/>
+  <Field Name="IndicadorNovaPesquisa" Start="267" Length="4"/>
+  <Field Name="SequenciaMensagem" Start="269" Length="4"/>
+  <!--Field Name="Filler" Start="541" Length="1379"/-->
+</FileMap>

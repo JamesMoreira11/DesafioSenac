@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="file:///C:/GIT/featuredevelop/pos-venda-fabricante/servicos_aplicacoes_csharp/Cielo.EnvioOperadorExterno/WSDL/CheckoutMovel_Habilitacao_sync_out_SI.wsdl" filename="CheckoutMovel_Habilitacao_sync_out_SI.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

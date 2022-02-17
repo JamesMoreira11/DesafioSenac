@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N2="http://canonico.cielo.com.br/governancasoa/comum/v1" xmlns:WL5G3N1="http://service.cielo.com.br/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" xmlns:WL5G3N4="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:WL5G3N3="http://canonico.cielo.com.br/comum/v1" name="Cliente_consultarDadosCadastraisClienteServiceContract" targetNamespace="http://service.cielo.com.br/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:documentation>
+	    Serviço para consulta dos dados cadastrais do cliente no SEC na mensagem 101.Essa nova versão é a evolução da versão 3 com os campos de Gerente Virtual
+	    Versão: 7.0
+	    Autor: Danilo Carrenho Ferreira
+	
+	    Historico de revisao:
+	    7.0 2017-05-13 14:13:38 Danilo Carrenho Ferreira: Versão inicial 
+	</WL5G3N0:documentation>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:header="http://canonico.cielo.com.br/governancasoa/comum/v1" xmlns:tns="http://service.cielo.com.br/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" xmlns:fault="http://canonico.cielo.com.br/comum/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://service.cielo.com.br/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:include schemaLocation="http://osbprd.enterprisetrn.corp:8801/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente?SCHEMA%2FCadastro%2FCliente%2FCliente%2Fv7%2FconsultarDadosCadastraisCliente%2FXSD%2FCliente_consultarDadosCadastraisClienteServiceSchema" />
+      <xsd:import schemaLocation="http://osbprd.enterprisetrn.corp:8801/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente?SCHEMA%2FCanonicoCielo%2FCanonicoCielo%2Fv1%2Fcoi%2FCieloSoapHeader" namespace="http://canonico.cielo.com.br/governancasoa/comum/v1" />
+      <xsd:import schemaLocation="http://osbprd.enterprisetrn.corp:8801/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente?SCHEMA%2FCanonicoCielo%2FCanonicoCielo%2Fv1%2Fcoi%2FComum" namespace="http://canonico.cielo.com.br/comum/v1" />
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="consultarDadosCadastraisClienteRequest">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:consultarDadosCadastraisClienteRequest" />
+    <WL5G3N0:part name="header" element="WL5G3N2:cieloSoapHeader" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="consultarDadosCadastraisClienteResponse">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:consultarDadosCadastraisClienteResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="faultMessage">
+    <WL5G3N0:part name="parameters" element="WL5G3N3:fault" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="Cliente_consultarDadosCadastraisClienteServicePortType">
+    <WL5G3N0:operation name="consultarDadosCadastraisCliente">
+      <WL5G3N0:documentation>
+				Operacao responsavel por consulta dos dados cadastrais do cliente no SEC na mensagem 101.Essa nova versão é a evolução da versão 3 com os campos de Gerente Virtual
+			</WL5G3N0:documentation>
+      <WL5G3N0:input message="WL5G3N1:consultarDadosCadastraisClienteRequest" />
+      <WL5G3N0:output message="WL5G3N1:consultarDadosCadastraisClienteResponse" />
+      <WL5G3N0:fault name="fault" message="WL5G3N1:faultMessage" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="Cliente_consultarDadosCadastraisClienteServiceSOAPBinding" type="WL5G3N1:Cliente_consultarDadosCadastraisClienteServicePortType">
+    <WL5G3N4:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="consultarDadosCadastraisCliente">
+      <WL5G3N4:operation soapAction="http://service.cielo.com.br/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N4:header message="WL5G3N1:consultarDadosCadastraisClienteRequest" part="header" use="literal" />
+        <WL5G3N4:body use="literal" parts="parameters" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N4:body use="literal" parts="parameters" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N4:fault use="literal" name="fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="Cliente_consultarDadosCadastraisClienteService">
+    <WL5G3N0:port name="Cliente_consultarDadosCadastraisClienteServiceSOAPPort" binding="WL5G3N1:Cliente_consultarDadosCadastraisClienteServiceSOAPBinding">
+      <WL5G3N4:address location="http://osbprd.enterprisetrn.corp:8801/cadastro/cliente/cliente/v7/consultardadoscadastraiscliente" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

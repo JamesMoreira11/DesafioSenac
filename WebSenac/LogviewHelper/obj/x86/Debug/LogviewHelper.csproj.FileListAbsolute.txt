@@ -1,0 +1,11 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\bin\x86\Debug\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\bin\x86\Debug\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Debug\LogviewHelper.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Debug\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Debug\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\LogviewHelper\bin\x86\Debug\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\LogviewHelper\bin\x86\Debug\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\LogviewHelper\obj\x86\Debug\LogviewHelper.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\LogviewHelper\obj\x86\Debug\LogviewHelper.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\LogviewHelper\obj\x86\Debug\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WebSenac\LogviewHelper\obj\x86\Debug\LogviewHelper.pdb

@@ -1,0 +1,5 @@
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Exceptions\bin\Release\Cielo.Gtec.Exceptions.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Exceptions\bin\Release\Cielo.Gtec.Exceptions.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Release\Cielo.Gtec.Exceptions.csproj.CoreCompileInputs.cache
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Release\Cielo.Gtec.Exceptions.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Release\Cielo.Gtec.Exceptions.pdb

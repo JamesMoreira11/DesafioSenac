@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileMap>
+  <Field Name="CodigoMensagem" Start="0" Length="3"/>
+  <Field Name="CodigoSolicitante" Start="3" Length="4"/>
+  <Field Name="TerminalChamador" Start="7" Length="4"/>
+  <Field Name="EstabelecimentoPesquisar" Start="11" Length="10"/>
+  <Field Name="EventoPesquisar" Start="21" Length="4"/>
+  <Field Name="DependenciaPesquisar" Start="25" Length="4"/>
+  <Field Name="ReferenciaPesquisar" Start="29" Length="7"/>
+  <Field Name="DataInicioPesquisa" Start="36" Length="8"/>
+  <Field Name="DataFinalPesquisa" Start="44" Length="8"/>
+
+  <Field Name="Tipo1" Start="52" Length="1"/>
+  <Field Name="Linha1" Start="53" Length="79"/>
+  <Field Name="Tipo2" Start="132" Length="1"/>
+  <Field Name="Linha2" Start="133" Length="79"/>
+  <Field Name="Tipo3" Start="212" Length="1"/>
+  <Field Name="Linha3" Start="213" Length="79"/>
+  <Field Name="Tipo4" Start="292" Length="1"/>
+  <Field Name="Linha4" Start="293" Length="79"/>
+  <Field Name="Tipo5" Start="372" Length="1"/>
+  <Field Name="Linha5" Start="373" Length="79"/>
+  <Field Name="Tipo6" Start="452" Length="1"/>
+  <Field Name="Linha6" Start="453" Length="79"/>
+  <Field Name="Tipo7" Start="532" Length="1"/>
+  <Field Name="Linha7" Start="533" Length="79"/>
+  <Field Name="Tipo8" Start="612" Length="1"/>
+  <Field Name="Linha8" Start="613" Length="79"/>
+  <Field Name="Tipo9" Start="692" Length="1"/>
+  <Field Name="Linha9" Start="693" Length="79"/>
+  <Field Name="Tipo10" Start="772" Length="1"/>
+  <Field Name="Linha10" Start="773" Length="79"/>
+  <Field Name="Tipo11" Start="852" Length="1"/>
+  <Field Name="Linha11" Start="853" Length="79"/>
+  <Field Name="Tipo12" Start="932" Length="1"/>
+  <Field Name="Linha12" Start="933" Length="79"/>
+  <Field Name="Tipo13" Start="1012" Length="1"/>
+  <Field Name="Linha13" Start="1013" Length="79"/>
+  <Field Name="Tipo14" Start="1092" Length="1"/>
+  <Field Name="Linha14" Start="1093" Length="79"/>
+  <Field Name="Tipo15" Start="1172" Length="1"/>
+  <Field Name="Linha15" Start="1173" Length="79"/>
+  <Field Name="Tipo16" Start="1252" Length="1"/>
+  <Field Name="Linha16" Start="1253" Length="79"/>
+  <Field Name="Tipo17" Start="1332" Length="1"/>
+  <Field Name="Linha17" Start="1333" Length="79"/>
+  <Field Name="Tipo18" Start="1412" Length="1"/>
+  <Field Name="Linha18" Start="1413" Length="79"/>
+  <Field Name="Tipo19" Start="1492" Length="1"/>
+  <Field Name="Linha19" Start="1493" Length="79"/>
+  <Field Name="Tipo20" Start="1572" Length="1"/>
+  <Field Name="Linha20" Start="1573" Length="79"/>
+  <Field Name="Tipo21" Start="1652" Length="1"/>
+  <Field Name="Linha21" Start="1653" Length="79"/>
+  <Field Name="Tipo22" Start="1732" Length="1"/>
+  <Field Name="Linha22" Start="1733" Length="79"/>
+  <Field Name="Tipo23" Start="1812" Length="1"/>
+  <Field Name="Linha23" Start="1813" Length="79"/>
+
+
+  <Field Name="SequenciaMensagem" Start="1893" Length="4"/>
+  <!--Field Name="Filler" Start="541" Length="1379"/-->
+</FileMap>

@@ -1,0 +1,17 @@
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Data.dll.config
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Data.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Data.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Common.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Entities.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Exceptions.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Newtonsoft.Json.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Common.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Entities.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Cielo.Gtec.Exceptions.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\bin\Debug\Newtonsoft.Json.xml
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Debug\Cielo.Gtec.Data.csprojAssemblyReference.cache
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Debug\Cielo.Gtec.Data.csproj.CoreCompileInputs.cache
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Debug\Cielo.Gtec.Data.csproj.CopyComplete
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Debug\Cielo.Gtec.Data.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Data\obj\Debug\Cielo.Gtec.Data.pdb

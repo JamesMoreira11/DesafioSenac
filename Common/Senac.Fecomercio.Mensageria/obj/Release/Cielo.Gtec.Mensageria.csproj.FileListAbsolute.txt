@@ -1,0 +1,16 @@
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Mensageria.dll.config
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Mensageria.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Mensageria.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Common.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Entities.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\log4net.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Newtonsoft.Json.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Common.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Entities.pdb
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\log4net.xml
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Newtonsoft.Json.xml
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Cielo.Gtec.Mensageria.csprojAssemblyReference.cache
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Cielo.Gtec.Mensageria.csproj.CoreCompileInputs.cache
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Cielo.Gtec.Mensageria.csproj.CopyComplete
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Cielo.Gtec.Mensageria.dll
+C:\git\featuredevelop\appSelg1189\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Cielo.Gtec.Mensageria.pdb

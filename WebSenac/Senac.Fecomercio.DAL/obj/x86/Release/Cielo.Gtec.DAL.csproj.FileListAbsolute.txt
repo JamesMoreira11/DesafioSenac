@@ -1,0 +1,9 @@
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\CieloGtecDAL.dll
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\CieloGtecDAL.pdb
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\LogviewHelper.dll
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\bin\x86\Release\LogviewHelper.pdb
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\Cielo.Gtec.DAL.csprojAssemblyReference.cache
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\Cielo.Gtec.DAL.csproj.CoreCompileInputs.cache
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\Cielo.Gtec.DAL.csproj.CopyComplete
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\CieloGtecDAL.dll
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\Cielo.Gtec.DAL\obj\x86\Release\CieloGtecDAL.pdb

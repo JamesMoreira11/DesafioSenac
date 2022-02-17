@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WL5G3N0:definitions xmlns:WL5G3N2="http://canonico.cielo.com.br/governancasoa/comum/v1" xmlns:WL5G3N1="http://service.cielo.com.br/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" xmlns:WL5G3N4="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:WL5G3N3="http://canonico.cielo.com.br/comum/v1" name="Evento_abrirEventoServiceContract" targetNamespace="http://service.cielo.com.br/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/">
+  <WL5G3N0:documentation>
+	    Serviço para abrir evento no SEC
+		Versão: 2.1
+		Autor: Leticia Jofre (Accurate)
+
+		Historico de revisao:
+		2.0 2017-04-05 19:32:32 Davi Braz (Accurate): Versão inicial
+		2.1 2018-04-16 Leticia Jofre (Accurate): Inclusão de tratamento de erros
+	</WL5G3N0:documentation>
+  <WL5G3N0:types>
+    <xsd:schema xmlns:header="http://canonico.cielo.com.br/governancasoa/comum/v1" xmlns:tns="http://service.cielo.com.br/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" xmlns:fault="http://canonico.cielo.com.br/comum/v1" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://service.cielo.com.br/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:include schemaLocation="http://osbhml.enterprisetrn.corp:8801/apoionegocio/tecnologiainformacao/evento/v21/abrirevento?SCHEMA%2FApoioNegocio%2FTecnologiaInformacao%2FEvento%2Fv21%2FabrirEvento%2FXSD%2FEvento_abrirEventoServiceSchema" />
+      <xsd:import schemaLocation="http://osbhml.enterprisetrn.corp:8801/apoionegocio/tecnologiainformacao/evento/v21/abrirevento?SCHEMA%2FCanonicoCielo%2FCanonicoCielo%2Fv1%2Fcoi%2FCieloSoapHeader" namespace="http://canonico.cielo.com.br/governancasoa/comum/v1" />
+      <xsd:import schemaLocation="http://osbhml.enterprisetrn.corp:8801/apoionegocio/tecnologiainformacao/evento/v21/abrirevento?SCHEMA%2FCanonicoCielo%2FCanonicoCielo%2Fv1%2Fcoi%2FComum" namespace="http://canonico.cielo.com.br/comum/v1" />
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="abrirEventoRequest">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:abrirEventoRequest" />
+    <WL5G3N0:part name="header" element="WL5G3N2:cieloSoapHeader" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="abrirEventoResponse">
+    <WL5G3N0:part name="parameters" element="WL5G3N1:abrirEventoResponse" />
+  </WL5G3N0:message>
+  <WL5G3N0:message name="faultMessage">
+    <WL5G3N0:part name="parameters" element="WL5G3N3:fault" />
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="Evento_abrirEventoServicePortType">
+    <WL5G3N0:operation name="abrirEvento">
+      <WL5G3N0:documentation>
+				Operacao responsavel por abrir evento no SEC
+			</WL5G3N0:documentation>
+      <WL5G3N0:input message="WL5G3N1:abrirEventoRequest" />
+      <WL5G3N0:output message="WL5G3N1:abrirEventoResponse" />
+      <WL5G3N0:fault name="fault" message="WL5G3N1:faultMessage" />
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="Evento_abrirEventoServiceSOAPBinding" type="WL5G3N1:Evento_abrirEventoServicePortType">
+    <WL5G3N4:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <WL5G3N0:operation name="abrirEvento">
+      <WL5G3N4:operation soapAction="http://service.cielo.com.br/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" style="document" />
+      <WL5G3N0:input>
+        <WL5G3N4:body use="literal" parts="parameters" />
+        <WL5G3N4:header message="WL5G3N1:abrirEventoRequest" part="header" use="literal" />
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N4:body use="literal" parts="parameters" />
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="fault">
+        <WL5G3N4:fault use="literal" name="fault" namespace="" />
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="Evento_abrirEventoService">
+    <WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+    <WL5G3N0:port name="Evento_abrirEventoServiceSOAPPort" binding="WL5G3N1:Evento_abrirEventoServiceSOAPBinding">
+      <WL5G3N4:address location="http://osbhml.enterprisetrn.corp:8801/apoionegocio/tecnologiainformacao/evento/v21/abrirevento" />
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

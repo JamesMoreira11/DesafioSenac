@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://canonico.cielo.com.br/comum/v1" elementFormDefault="qualified" targetNamespace="http://canonico.cielo.com.br/comum/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="Fault">
+    <annotation>
+      <documentation>
+				Entidade do modelo canonico corporativo, tem como funcao padronizar o layout de excecoes.
+				Versao: 1.0
+				Autor: Andre Souza
+	
+				Historico de revisao:
+				1.0 25-06.2014 Criacao da Entidade
+			</documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="codigo" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="descricao" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="tipo" type="tns:Tipo" />
+      <element minOccurs="0" maxOccurs="1" name="sistemaOrigem" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="servicoOrigem" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="detalhe" type="tns:FaultDetail" />
+    </sequence>
+  </complexType>
+  <simpleType name="Tipo">
+    <restriction base="string">
+      <enumeration value="NEGOCIO" />
+      <enumeration value="TECNICO" />
+    </restriction>
+  </simpleType>
+  <complexType name="FaultDetail">
+    <sequence>
+      <any minOccurs="0" maxOccurs="unbounded" namespace="##any" processContents="lax" />
+    </sequence>
+    <anyAttribute namespace="##any" processContents="lax" />
+  </complexType>
+  <element name="fault" type="tns:Fault" />
+  <attributeGroup name="paginacao">
+    <annotation>
+      <documentation>
+				Grupo de Atributos que representam a paginação, tanto no elemento request
+				quanto no elemento lista.
+				Versao: 1.0
+				Autor: Felipe Firmo
+		
+				Ultima Alteração:
+				1.0 25-06-2014 Criacao da Entidade
+			</documentation>
+    </annotation>
+    <attribute name="indice" type="int" use="optional">
+      <annotation>
+        <documentation>
+				Inicio do indice da pagina (primeira pagina indice = 1) (solicitada ou retornada)
+			</documentation>
+      </annotation>
+    </attribute>
+    <attribute name="tamanhoPagina" type="int" use="optional">
+      <annotation>
+        <documentation>
+				Número de registros da página atual (solicitada ou retornada)
+			</documentation>
+      </annotation>
+    </attribute>
+    <attribute name="totalRegistros" type="int" use="optional">
+      <annotation>
+        <documentation>
+				Número total de registros da pesquisa (apenas no retorno)
+			</documentation>
+      </annotation>
+    </attribute>
+    <attribute name="indTotalRegistros" type="boolean" use="optional">
+      <annotation>
+        <documentation>
+				Indicador se devera ser retornado o nro total de registros (rowCount) (apanas na solicitacao)
+			</documentation>
+      </annotation>
+    </attribute>
+  </attributeGroup>
+  <attributeGroup name="paginacaoSequencialEDSLink">
+    <annotation>
+      <documentation>
+				Grupo de Atributos que representam a paginação utilizada pelo SEC.
+				Versao: 1.0
+				Autor: Arnaldo Imamura
+		
+				Ultima Alteração:
+				1.0 04-08-2014 Criacao da Entidade
+			</documentation>
+    </annotation>
+    <attribute name="proximoRegistro" type="string" use="optional">
+      <annotation>
+        <documentation>Número do primeiro registro da próxima página da pesquisa.</documentation>
+      </annotation>
+    </attribute>
+    <attribute name="chavePaginacao" type="string" use="optional">
+      <annotation>
+        <documentation>Chave para pesquisa das próximas páginas.</documentation>
+      </annotation>
+    </attribute>
+  </attributeGroup>
+</schema>

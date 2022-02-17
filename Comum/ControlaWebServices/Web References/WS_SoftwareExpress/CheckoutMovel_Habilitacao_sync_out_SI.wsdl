@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:p2="http://ws.configuracao.agt.softwareexpress.com.br/" xmlns:p1="urn:cielo:gtec:software_house" name="CheckoutMovel_Habilitacao_sync_out_SI" targetNamespace="urn:cielo:gtec:software_house" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_CheckoutMovel_Habilitacao_sync_out_SI" />
+  <wsdl:types>
+    <xsd:schema xmlns="http://ws.configuracao.agt.softwareexpress.com.br/" targetNamespace="http://ws.configuracao.agt.softwareexpress.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="habilitaTerminalResponse" type="p2:habilitaTerminalResponse" />
+      <xsd:element name="habilitaTerminal" type="p2:habilitaTerminal" />
+      <xsd:complexType name="habilitaTerminalReq">
+        <xsd:sequence>
+          <xsd:element name="chaveAcesso" type="xsd:string" />
+          <xsd:element name="codigoRedeCaptura" type="xsd:int" />
+          <xsd:element name="operacao" type="xsd:string" />
+          <xsd:element maxOccurs="unbounded" name="terminal" type="p2:terminalWS" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="habilitaTerminalResp">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="chaveAcesso" type="xsd:string" />
+          <xsd:element minOccurs="0" name="codigoRedeCaptura" type="xsd:int" />
+          <xsd:element minOccurs="0" name="operacao" type="xsd:string" />
+          <xsd:element minOccurs="0" name="resultadoChamada" type="xsd:int" />
+          <xsd:element minOccurs="0" name="resultadoDescricao" type="xsd:string" />
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="terminais" nillable="true" type="p2:terminalWSResp" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="terminalWS">
+        <xsd:sequence>
+          <xsd:element name="chamadoGTEC" type="xsd:long" />
+          <xsd:element name="cnpj" type="xsd:string" />
+          <xsd:element minOccurs="0" name="filialDesignada" nillable="true" type="xsd:string" />
+          <xsd:element name="identificacaoExtra" type="xsd:string" />
+          <xsd:element name="identificacaoTerminal" type="xsd:string" />
+          <xsd:element name="modeloEquipamento" type="xsd:string" />
+          <xsd:element minOccurs="0" name="motivoEvento" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="novoRemanejado" nillable="true" type="xsd:string" />
+          <xsd:element name="numeroLote" type="xsd:int" />
+          <xsd:element minOccurs="0" name="observacao" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="prestadorServico" nillable="true" type="xsd:string" />
+          <xsd:element name="segChamadoGTEC" type="xsd:int" />
+          <xsd:element minOccurs="0" name="servicoContratado" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="tipoEquipamento" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="habilitaTerminalResponse">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="response" type="p2:habilitaTerminalResp" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="terminalWSResp">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="chamadoGTEC" type="xsd:long" />
+          <xsd:element minOccurs="0" name="cnpj" type="xsd:string" />
+          <xsd:element minOccurs="0" name="erro" type="xsd:string" />
+          <xsd:element minOccurs="0" name="identificacaoExtra" type="xsd:string" />
+          <xsd:element minOccurs="0" name="identificacaoTerminal" type="xsd:string" />
+          <xsd:element minOccurs="0" name="numeroLote" type="xsd:int" />
+          <xsd:element minOccurs="0" name="retorno" type="xsd:int" />
+          <xsd:element minOccurs="0" name="segChamadoGTEC" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="habilitaTerminal">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="habilitaTerminalReq" type="p2:habilitaTerminalReq" />
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="p2.HabilitacaoRC_habilitaTerminal">
+    <wsdl:documentation />
+    <wsdl:part name="habilitaTerminal" element="p2:habilitaTerminal" />
+  </wsdl:message>
+  <wsdl:message name="p2.HabilitacaoRC_habilitaTerminalResponse">
+    <wsdl:documentation />
+    <wsdl:part name="habilitaTerminalResponse" element="p2:habilitaTerminalResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CheckoutMovel_Habilitacao_sync_out_SI">
+    <wsdl:documentation />
+    <wsdl:operation name="CheckoutMovel_Habilitacao_sync_out_SI">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_CheckoutMovel_Habilitacao_sync_out_SI" />
+      </wsp:Policy>
+      <wsdl:input message="p1:p2.HabilitacaoRC_habilitaTerminal" />
+      <wsdl:output message="p1:p2.HabilitacaoRC_habilitaTerminalResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CheckoutMovel_Habilitacao_sync_out_SIBinding" type="p1:CheckoutMovel_Habilitacao_sync_out_SI">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="CheckoutMovel_Habilitacao_sync_out_SI">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Gtec_BS_CheckoutMovel_Habilitacao_sync_out_SI">
+    <wsdl:port name="HTTP_Port" binding="p1:CheckoutMovel_Habilitacao_sync_out_SIBinding">
+      <address location="http://cbmphordpi1.cbmp.corp:51100/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Gtec_BS&amp;receiverParty=&amp;receiverService=&amp;interface=CheckoutMovel_Habilitacao_sync_out_SI&amp;interfaceNamespace=urn%3Acielo%3Agtec%3Asoftware_house" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:CheckoutMovel_Habilitacao_sync_out_SIBinding">
+      <address location="https://cbmphordpi1.cbmp.corp:51101/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Gtec_BS&amp;receiverParty=&amp;receiverService=&amp;interface=CheckoutMovel_Habilitacao_sync_out_SI&amp;interfaceNamespace=urn%3Acielo%3Agtec%3Asoftware_house" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

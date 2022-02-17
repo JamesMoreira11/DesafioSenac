@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileMap>
+  <Field Name="CodigoMensagem" Start="0" Length="3"/>
+  <Field Name="CodigoSolicitante" Start="3" Length="4"/>
+  <Field Name="TerminalChamador" Start="7" Length="4"/>
+  <Field Name="EstabelecimentoPesquisar" Start="11" Length="10"/>
+  <Field Name="IndicadorNovaPesquisa" Start="57" Length="1"/>
+  <Field Name="SequenciaNovaPesquisa" Start="58" Length="4"/>
+  <Field Name="CodigoErro" Start="89" Length="3"/>
+  <Field Name="NomeArquivo" Start="92" Length="8"/>
+  <Field Name="MensagemErro" Start="100" Length="50"/>
+</FileMap>

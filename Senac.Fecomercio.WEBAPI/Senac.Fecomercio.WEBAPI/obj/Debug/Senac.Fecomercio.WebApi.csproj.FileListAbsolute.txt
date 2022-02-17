@@ -1,0 +1,2 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Senac.Fecomercio.WEBAPI\Senac.Fecomercio.WebApi\obj\Debug\Senac.Fecomercio.WebApi.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\Senac.Fecomercio.WEBAPI\Senac.Fecomercio.WebApi\obj\Debug\Senac.Fecomercio.WebApi.csproj.CoreCompileInputs.cache

@@ -1,0 +1,17 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Data.dll.config
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Data.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Data.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Common.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Entities.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Exceptions.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Newtonsoft.Json.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Oracle.ManagedDataAccess.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Common.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Entities.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Cielo.Gtec.Exceptions.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\bin\Release\Newtonsoft.Json.xml
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Senac.Fecomercio.Data.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Senac.Fecomercio.Data.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Senac.Fecomercio.Data.csproj.CopyComplete
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Cielo.Gtec.Data.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Data\obj\Release\Cielo.Gtec.Data.pdb

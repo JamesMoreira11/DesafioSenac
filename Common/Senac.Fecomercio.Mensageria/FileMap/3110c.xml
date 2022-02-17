@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FileMap>
+  <Field Name="CodigoMensagem"                            Start="1" Length="4"/>
+  <Field Name="ChaveIdentificacaoGtec"                    Start="5" Length="36"/>
+  <Field Name="IdentificadorOrigemChamada"                Start="41" Length="4"/>
+  <Field Name="OpcaoOperacao"                             Start="45" Length="1"/>
+  <Field Name="UsuarioSistemasRedes"                      Start="46" Length="8"/>
+  <Field Name="UsuarioSistemaOrigem"                      Start="54" Length="8"/>
+  <Field Name="CodigoRetorno"                             Start="62" Length="4"/>
+  <Field Name="MensagemRetorno"                           Start="66" Length="80"/>
+  <Field Name="NumeroTerminal"                            Start="146" Length="8"/> 
+  <Field Name="CodigoEstabelecimento"                     Start="154" Length="12"/>
+  <Field Name="LojaEstabelecimento"                       Start="166" Length="4"/>
+  <Field Name="TipoTecnologia"                            Start="170" Length="3"/>
+  <Field Name="CodigoRetorno"                             Start="173" Length="4"/>
+  <Field Name="MensagemRetorno"                           Start="177" Length="70"/>
+  <Field Name="OperadorLogistico"                         Start="247" Length="1"/>
+  <Field Name="CodigoSolicitacaoAtualizacaoPaginas"       Start="248" Length="1"/>
+  <Field Name="DataSolicitacaoAtualizacaoPaginas"         Start="249" Length="8"/>
+  <Field Name="NumeroAcesso"                              Start="257" Length="6"/>
+  <Field Name="VersaoAplicativo"                          Start="263" Length="12"/>
+  <Field Name="IndicadorPareamentoPINPAD"                 Start="275" Length="1"/>
+  <Field Name="SiglaGrupoSolucao"                         Start="276" Length="3"/>
+  <Field Name="DescrGrupoSolucao"                         Start="279" Length="10"/>
+  <Field Name="CodigoCategoria"                           Start="289" Length="3"/>
+  <Field Name="SiglaTipoTerminal"                         Start="292" Length="2"/>
+  <Field Name="IndicadorAtualizacaoPagina"                Start="294" Length="1"/>
+  <Field Name="DataAtualizacaoPagina"                     Start="295" Length="8"/>
+  <Field Name="HoraAtualizacaoPagina"                     Start="303" Length="4"/>
+  <Field Name="RetornoUltInicializacaoBaixaTecnica"       Start="307" Length="4"/>
+  <Field Name="MensagemRetUltInicializacaoBaixaTecnica"   Start="311" Length="40"/>
+  <Field Name="CodigoUsoTerminal"                         Start="351" Length="2"/>
+  <Field Name="CodigoSimCard"                             Start="353" Length="30"/>
+  <Field Name="CodigoOperadorLogistico"                   Start="383" Length="1"/>
+  <Field Name="NumeroSerieTerminalPINPAD"                 Start="384" Length="30"/>
+  <Field Name="NumeroSerieTerminalPINUltimaIniciacao"     Start="414" Length="30"/>
+  <Field Name="DataUltimaBaixaTecnica"                    Start="444" Length="8"/>
+  <Field Name="HoraUltimaBaixaTecnica"                    Start="452" Length="6"/>
+  <Field Name="CodigoTipoBaixaTecnica"                    Start="458" Length="2"/>
+  <Field Name="IndicadorOperadorLojista"                  Start="460" Length="1"/>
+  <Field Name="EspacoVago"                                Start="460" Length="1456"/>
+</FileMap>

@@ -1,0 +1,13 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\Cielo.Gtec.Entities.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\Cielo.Gtec.Entities.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\Cielo.Gtec.Common.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\log4net.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\Newtonsoft.Json.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\Cielo.Gtec.Common.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\log4net.xml
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\bin\Release\Newtonsoft.Json.xml
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\obj\Release\Senac.Fecomercio.Entities.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\obj\Release\Senac.Fecomercio.Entities.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\obj\Release\Senac.Fecomercio.Entities.csproj.CopyComplete
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\obj\Release\Cielo.Gtec.Entities.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Entities\obj\Release\Cielo.Gtec.Entities.pdb

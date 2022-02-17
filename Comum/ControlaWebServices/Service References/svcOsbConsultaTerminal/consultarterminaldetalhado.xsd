@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://service.cielo.com.br/operacao/logistica/equipamento/v9/consultarterminaldetalhado" xmlns:com="http://canonico.cielo.com.br/comum/v1" elementFormDefault="qualified" targetNamespace="http://service.cielo.com.br/operacao/logistica/equipamento/v9/consultarterminaldetalhado" xmlns="http://www.w3.org/2001/XMLSchema">
+  <element name="consultarTerminalDetalhadoRequest" type="tns:ConsultarTerminalDetalhadoRequestType">
+    <annotation>
+      <documentation>
+				Dados de entrada para consultar dados detalhados do
+				terminal.
+			</documentation>
+    </annotation>
+  </element>
+  <element name="consultarTerminalDetalhadoResponse" type="tns:ConsultarTerminalDetalhadoResponseType">
+    <annotation>
+      <documentation>
+				Dados de saida para consultar dados detalhados do
+				terminal.
+			</documentation>
+    </annotation>
+  </element>
+  <complexType name="ConsultarTerminalDetalhadoRequestType">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="numeroLogico" type="string">
+        <annotation>
+          <documentation>
+						Numero logico do terminal. Ex: 41001235
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoTipoTecnologia" type="string">
+        <annotation>
+          <documentation>
+						Descricao do tipo da tecnologia do terminal. Ex:
+						POS, LIO, MOB, TEF, ECO
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeSistemaSolicitante" type="string">
+        <annotation>
+          <documentation>
+						Nome do sistema solicitante. Ex: URA, CRM
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ConsultarTerminalDetalhadoResponseType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="dadosAtualizacaoPagina" type="tns:DadosAtualizacaoPaginaType">
+        <annotation>
+          <documentation>Dados da atualizacao da pagina</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosBaixaTecnica" type="tns:DadosBaixaTecnicaType">
+        <annotation>
+          <documentation>Dados da baixa tecnica do equipamento
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosCliente" type="tns:DadosClienteType">
+        <annotation>
+          <documentation>Dados do estabelecimento comercial</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosEquipamento" type="tns:DadosEquipamentoType">
+        <annotation>
+          <documentation>Dados do terminal logico</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosGrupoSolucao" type="tns:DadosGrupoSolucaoType">
+        <annotation>
+          <documentation>Dados do grupo de solucao do equipamento
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosRetorno" type="tns:DadosRetornoType">
+        <annotation>
+          <documentation>Dados de retorno do serviço</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dadosUltimaInicializacao" type="tns:DadosUltimaInicializacaoType">
+        <annotation>
+          <documentation>Dados de inicializacao do equipamento
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="listaDadosProcessamento" type="tns:ListaDadosProcessamentoType">
+        <annotation>
+          <documentation>Lista de dados de processamento</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosClienteType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoCliente" type="long">
+        <annotation>
+          <documentation>Codigo adotado pela Cielo para identificar o
+						cliente. Ex: 1003299919
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoLojaEstabelecimento" type="integer">
+        <annotation>
+          <documentation>Codigo da loja do estabelecimento. Ex: 1
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoPessoa" type="string">
+        <annotation>
+          <documentation>Codigo para identificar o cliente, pessoa juridica
+						ou fisica. Ex: F, J
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoNomeComprovante" type="string">
+        <annotation>
+          <documentation>Nome do comprovante</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorComercioEletronico" type="boolean">
+        <annotation>
+          <documentation>Indicador de e-commerce</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeCliente" type="string">
+        <annotation>
+          <documentation>Nome do cliente pessoa fisica. Ex: JOSE
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeFantasia" type="string">
+        <annotation>
+          <documentation>Nome fantasia do cliente pessoa juridica. Ex: CMVE
+						CLUV S VCGG
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeRazaoSocial" type="string">
+        <annotation>
+          <documentation>Nome da razao social do cliente pessoa juridica. Ex:
+						CQBAADSA INMLES RLBC
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="siglaBloqueioInternacional" type="string">
+        <annotation>
+          <documentation>Sigla de bloqueio internacional. Exemplo: A, B, C, D, G, M, S, T, X</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosEquipamentoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoCategoria" type="string">
+        <annotation>
+          <documentation>Codigo da categoria do equipamento. Ex: 1
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoOperadoraSIMCard" type="string">
+        <annotation>
+          <documentation>Codigo da operadora do sim card do equipamento. Ex:
+						4
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoOperadorLogistico" type="string">
+        <annotation>
+          <documentation>Código do operador logístico</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoNoMobile" type="string">
+        <annotation>
+          <documentation>Código no mobile</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoNoPrimario" type="string">
+        <annotation>
+          <documentation>Código do nó primário</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoNoSecundario" type="string">
+        <annotation>
+          <documentation>Código do nó secundário</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoNoServico" type="string">
+        <annotation>
+          <documentation>Código no serviço</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoNoTelecarga" type="string">
+        <annotation>
+          <documentation>Código na telecarga</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoUsoTerminal" type="string">
+        <annotation>
+          <documentation>Codigo do uso do equipamento. Ex: 1234
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoVersaoAplicativo" type="string">
+        <annotation>
+          <documentation>Codigo da versao do aplicativo do equipamento. Ex:
+						CD06WV68C40T
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoCompleta" type="string">
+        <annotation>
+          <documentation>Descricao completa do equipamento. Ex: VX 510 POSWEB M06 PCI
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoModelo" type="string">
+        <annotation>
+          <documentation>Descrição do modelo do equipamento. Ex: VX510 - PCI
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoResumida" type="string">
+        <annotation>
+          <documentation>Descrição resumida do equipamento. Ex: VX 510 PCI
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorBloqueio" type="boolean">
+        <annotation>
+          <documentation>Indicador de bloqueio</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorDescontinuado" type="boolean">
+        <annotation>
+          <documentation>Indicador de descontinuado. Ex: true / false
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoTerminalMarketing" type="string">
+        <annotation>
+          <documentation>Descrição amigável do terminal. Ex: Máquina fixa com Linha Discada
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorPareamentoPinpad" type="string">
+        <annotation>
+          <documentation>Indicador de pareamento do equipamento. Ex: N
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorPossuiChip" type="boolean">
+        <annotation>
+          <documentation>Indicador do equipamento que possui chip. Ex: false
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorPossuiTeclado" type="boolean">
+        <annotation>
+          <documentation>Indicador do equipamento que possui teclado. Ex:
+						false
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorPossuiTrilha" type="boolean">
+        <annotation>
+          <documentation>Indicador do equipamento que possui trilha. Ex:
+						false
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeGrupoSolucaoCaptura" type="string">
+        <annotation>
+          <documentation>Nome do grupo de solucao de captura do equipamento.
+						Ex: POS, LIO, MOB, TEF, ECO
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="nomeTecnologia" type="string">
+        <annotation>
+          <documentation>Nome da tecnologia. Ex: Dial
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroAcesso" type="long">
+        <annotation>
+          <documentation>Numero de acesso do equipamento. Ex: 260229
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroLogico" type="string">
+        <annotation>
+          <documentation>Numero logico do equipamento. Ex: 41001235
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroSerie" type="string">
+        <annotation>
+          <documentation>Numero de serie do equipamento. Ex: 0987650987687
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="siglaTipoTerminal" type="string">
+        <annotation>
+          <documentation>Sigla do tipo do equipamento. Ex: VX, WD
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoSIMCard" type="string">
+        <annotation>
+          <documentation>Codigo do SIM CARD. EX: 89550532190044921728
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorCanalOrigem" type="string">
+        <annotation>
+          <documentation>Indicador de canal de origem
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosAtualizacaoPaginaType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoNoAtualizacaoPagina" type="string">
+        <annotation>
+          <documentation>Código do nó da atualização de página</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dataAtualizacaoPagina" type="date">
+        <annotation>
+          <documentation>Data da atualizacao da pagina. Ex: 2017-05-29
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="horaAtualizacaoPagina" type="time">
+        <annotation>
+          <documentation>Hora da atualizacao da pagina. Ex: 14:07:00
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorAtualizacaoPagina" type="string">
+        <annotation>
+          <documentation>Indicador da atualizacao da pagina. Ex: *
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosBaixaTecnicaType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoRetornoUltimaInicializacaoBaixaTecnica" type="integer">
+        <annotation>
+          <documentation>Codigo de retorno da ultima inicializacao da baixa
+						tecnica. Ex: 10
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="codigoTipoBaixaTecnica" type="integer">
+        <annotation>
+          <documentation>Codigo do tipo da baixa tecnica. Ex: 3
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="dataUltimaBaixaTecnica" type="date">
+        <annotation>
+          <documentation>Data da ultima da baixa tecnica. Ex: 2017-05-29
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="horaUltimaBaixaTecnica" type="time">
+        <annotation>
+          <documentation>Hora da ultima da baixa tecnica. Ex: 14:07:00
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="mensagemRetornoUltimaInicializacaoBaixaTecnica" type="string">
+        <annotation>
+          <documentation>Mensagem de retorno da ultima inicializacao da baixa
+						tecnica. Ex: BAIXA TECNICA REALIZADA COM SUCESSO
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosGrupoSolucaoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="descricaoGrupoSolucao" type="string">
+        <annotation>
+          <documentation>Descricao do grupo de solucao do equipamento. Ex:
+						POS
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="siglaGrupoSolucao" type="string">
+        <annotation>
+          <documentation>Sigla do grupo de solucao do equipamento. Ex: X
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosUltimaInicializacaoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="dataUltimaInicializacao" type="date">
+        <annotation>
+          <documentation>Data da ultima inicializacao do equipamento. Ex:
+						2017-05-29
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="horaUltimaInicializacao" type="time">
+        <annotation>
+          <documentation>Hora da ultima inicializacao do equipamento. Ex:
+						14:07:00
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="indicadorInicializacao" type="string">
+        <annotation>
+          <documentation>Indicador de inicializacao do equipamento. Ex: *
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="numeroSerieTerminalUltimaInicializacao" type="string">
+        <annotation>
+          <documentation>Numero de serie ultima inicializacao do equipamento.
+						Ex: 12476358
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosRetornoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoRetornoMensagem" type="integer">
+        <annotation>
+          <documentation>
+						Codigo de retorno. Ex: 10, 59
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoRetornoMensagem" type="string">
+        <annotation>
+          <documentation>
+						Descricao da mensagem de retorno. Ex: Nenhum numero
+						logico encontrado
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="ListaDadosProcessamentoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="unbounded" name="dadosProcessamento" type="tns:DadosProcessamentoType">
+        <annotation>
+          <documentation>Dados do processamento</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+  <complexType name="DadosProcessamentoType">
+    <sequence>
+      <element minOccurs="0" maxOccurs="1" name="codigoRetorno" nillable="true" type="int">
+        <annotation>
+          <documentation>Código do retorno. Exemplos: 0 - Sucesso | 1 - Erro
+					</documentation>
+        </annotation>
+      </element>
+      <element minOccurs="0" maxOccurs="1" name="descricaoMensagemRetorno" nillable="true" type="string">
+        <annotation>
+          <documentation>Descrição do retorno. Exemplo: O processamento foi
+						realizada com sucesso | Ocorreu um erro durante o processamento no
+						provedor X
+					</documentation>
+        </annotation>
+      </element>
+    </sequence>
+  </complexType>
+</schema>

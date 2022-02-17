@@ -1,0 +1,19 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:tem="http://tempuri.org/"
+xmlns:wsv="http://schemas.datacontract.org/2004/07/WSVENDA_PAX.Modelos"
+xmlns:nom="http://schemas.microsoft.com/ws/2005/05/addressing/nome">
+	<soapenv:Header>
+		<nom:to>{0}</nom:to>
+		<nom:Action>http://tempuri.org/IVENDASPAX/TrackingRequest</nom:Action>
+	</soapenv:Header>
+	<soapenv:Body>
+		<tem:TrackingRequest>
+			<tem:numero_pedido>{1}</tem:numero_pedido>
+			<tem:acesso>
+				<wsv:Identificacao>{2}</wsv:Identificacao>
+				<wsv:credencial>{3}</wsv:credencial>
+				<wsv:senha>{4}</wsv:senha>
+			</tem:acesso>
+		</tem:TrackingRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

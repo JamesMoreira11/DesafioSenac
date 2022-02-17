@@ -1,0 +1,16 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Mensageria.dll.config
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Mensageria.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Mensageria.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Common.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Entities.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\log4net.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Newtonsoft.Json.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Common.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Cielo.Gtec.Entities.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\log4net.xml
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\bin\Release\Newtonsoft.Json.xml
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Senac.Fecomercio.Mensageria.csprojAssemblyReference.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Senac.Fecomercio.Mensageria.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Senac.Fecomercio.Mensageria.csproj.CopyComplete
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Cielo.Gtec.Mensageria.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Mensageria\obj\Release\Cielo.Gtec.Mensageria.pdb

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Senac.Fecomercio.ControlaWebServices.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Cielo_Gtec_ControlaWebServices_svcPAXVendaTerminal_v2_Gtec_HBS_VendaTerminal_out_SI" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://cbmphorhpi1:52100/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Gtec_HBS&amp;receiverParty=&amp;receiverService=&amp;interface=VendaTerminal_out_SI&amp;interfaceNamespace=urn%3Acielo%3Agtec%3Apax%3AVendaTerminal</Value>
+    </Setting>
+    <Setting Name="Cielo_Gtec_ControlaWebServices_svcSAP_PO_GtecService_MIService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://vwhsappo01.ccorp.local:52100/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=Gtec&amp;receiverParty=&amp;receiverService=&amp;interface=GtecService_MI&amp;interfaceNamespace=urn%3Avisanet%3Alegancy%3Agtec%3Aopl</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

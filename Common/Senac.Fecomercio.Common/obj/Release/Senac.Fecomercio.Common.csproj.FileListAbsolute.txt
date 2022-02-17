@@ -1,0 +1,10 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\bin\Release\Cielo.Gtec.Common.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\bin\Release\Cielo.Gtec.Common.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\bin\Release\log4net.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\bin\Release\Newtonsoft.Json.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\bin\Release\log4net.xml
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\bin\Release\Newtonsoft.Json.xml
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\obj\Release\Senac.Fecomercio.Common.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\obj\Release\Senac.Fecomercio.Common.csproj.CopyComplete
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\obj\Release\Cielo.Gtec.Common.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Common\obj\Release\Cielo.Gtec.Common.pdb

@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{351590D0-6163-4BB7-96D7-01D38B000A97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cielo.Gtec.ControlaWebServices</RootNamespace>
+    <AssemblyName>Cielo.Gtec.ControlaWebServices</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\ServiceReferenceBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Base\IEntradaServico.cs" />
+    <Compile Include="Base\ISaidaServico.cs" />
+    <Compile Include="Base\ServicoBase.cs" />
+    <Compile Include="Base\ServicoBaseRest.cs" />
+    <Compile Include="Base\WebClientBase.cs" />
+    <Compile Include="Base\WebClientWithTimeOut.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Cliente\Barramento\ClienteDadosCadastrais.cs" />
+    <Compile Include="Evento\Barramento\AbrirEvento.cs" />
+    <Compile Include="Fabricante\PAX\FabricanteServicePAX.cs" />
+    <Compile Include="Fabricante\PAX\TrackingRequest.cs" />
+    <Compile Include="Fabricante\PAX\TrackingRequestResponse.cs" />
+    <Compile Include="FaturamentoSAP\ServicoFaturamentoSAP.cs" />
+    <Compile Include="FaturamentoSAP\ServicoFaturamentoSAPWithRest.cs" />
+    <Compile Include="GtecServiceFabricante.cs" />
+    <Compile Include="GtecServiceMI_SAP_PO.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GtecServiceMI.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcOsbAbrirEvento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcOsbConsultarDadosCadastraisCliente\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\svcOsbConsultaTerminal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServicoRest\API\AppComercial\ServiceAppComercialRest.cs" />
+    <Compile Include="ServicoRest\API\AppComercial\TokenAppComercial.cs" />
+    <Compile Include="ServicoRest\API\Distribuidor\DistribuidorGenerico.cs" />
+    <Compile Include="ServicoRest\API\EnvioWhatsApp\ServicoCadastrarWhatsApp.cs" />
+    <Compile Include="ServicoRest\API\EnvioWhatsApp\ServicoEnviarWhatsApp.cs" />
+    <Compile Include="ServicoRest\API\EnvioWhatsApp\ServicoTokenWhatsApp.cs" />
+    <Compile Include="ServicoRest\API\EnvioWhatsApp\ServicoValidarWhatsApp.cs" />
+    <Compile Include="ServicoRest\API\GCOM\GestorComercial.cs" />
+    <Compile Include="ServicoRest\API\Hero\Itrack\ITrackGenerico.cs" />
+    <Compile Include="ServicoRest\API\Token\ServiceAPIToken.cs" />
+    <Compile Include="ServicoRest\API\GestaoDistribuidor\GestaoDistribuidor.cs" />
+    <Compile Include="ServicoRest\API\Ambev\WebHook\ServicoAPIWebHook.cs" />
+    <Compile Include="ServicoRest\API\TratamentoExternoSegundoNivel\ServicoTratamentoExternoSegundoNivel.cs" />
+    <Compile Include="ServicoRest\VSC\ApiOrders\Resource\ServicoApiOrdersRest.cs" />
+    <Compile Include="ServicoRest\VSC\Solucionamento\ServicoVSCRest.cs" />
+    <Compile Include="Terminal\Barramento\TerminalRedes.cs" />
+    <Compile Include="Web References\svcPAXVendaTerminal\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\svcSAP\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\svcSAP_PO\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\WS_SoftwareExpress\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcOsbAbrirEvento\abrirevento.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbAbrirEvento\abrirevento1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbAbrirEvento\abrirevento2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbAbrirEvento\Cielo.Gtec.ControlaWebServices.svcOsbAbrirEvento.abrirEventoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbAbrirEvento\Evento_abrirEventoServiceContract.wsdl" />
+    <None Include="Service References\svcOsbConsultarDadosCadastraisCliente\Cliente_consultarDadosCadastraisClienteServiceContract.wsdl" />
+    <None Include="Service References\svcOsbConsultarDadosCadastraisCliente\consultardadoscadastraiscliente.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbConsultarDadosCadastraisCliente\consultardadoscadastraiscliente1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbConsultarDadosCadastraisCliente\consultardadoscadastraiscliente2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.consultarTerminalDetalhadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosAtualizacaoPaginaType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosBaixaTecnicaType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosClienteType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosEquipamentoType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosGrupoSolucaoType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosProcessamentoType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosRetornoType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Cielo.Gtec.ControlaWebServices.svcOsbConsultaTerminal.DadosUltimaInicializacaoType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\consultarterminaldetalhado.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\consultarterminaldetalhado1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\consultarterminaldetalhado2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\Equipamento_consultarTerminalDetalhadoServiceContract.wsdl" />
+    <None Include="Web References\svcPAXVendaTerminal\Header_Return_VendaTerminal_DT1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\svcPAXVendaTerminal\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\svcPAXVendaTerminal\VendaTerminal_out_SI.wsdl" />
+    <None Include="Web References\svcSAP\GtecService_MI.wsdl" />
+    <None Include="Web References\svcSAP\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\svcSAP\Return_DT1.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\svcSAP_PO\GtecService_MI.wsdl" />
+    <None Include="Web References\svcSAP_PO\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\svcSAP_PO\Return_DT.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SoftwareExpress\CheckoutMovel_Habilitacao_sync_out_SI.wsdl" />
+    <None Include="Web References\WS_SoftwareExpress\habilitaTerminalResponse.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\WS_SoftwareExpress\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="C:\GIT\featuredevelop\pos-venda-fabricante\servicos_aplicacoes_csharp\Cielo.EnvioOperadorExterno\WSDL\CheckoutMovel_Habilitacao_sync_out_SI.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\WS_SoftwareExpress\</RelPath>
+      <UpdateFromURL>C:\GIT\featuredevelop\pos-venda-fabricante\servicos_aplicacoes_csharp\Cielo.EnvioOperadorExterno\WSDL\CheckoutMovel_Habilitacao_sync_out_SI.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ControlaWebServices_WS_SoftwareExpress_Gtec_BS_CheckoutMovel_Habilitacao_sync_out_SI</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\Branches\SELG-172-Envio-operador-Fedex\servicos_aplicacoes_csharp\Comum\ControlaWebServices\WSDL\GtecService_MIService_PO.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\svcSAP_PO\</RelPath>
+      <UpdateFromURL>C:\Projetos\Branches\SELG-172-Envio-operador-Fedex\servicos_aplicacoes_csharp\Comum\ControlaWebServices\WSDL\GtecService_MIService_PO.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Cielo_Gtec_ControlaWebServices_svcSAP_PO_GtecService_MIService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\Projetos\servicos_aplicacoes_csharp\Comum\ControlaWebServices\WSDL\Gtec_HBS_VendaTerminal_out_SI_v02.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\svcPAXVendaTerminal\</RelPath>
+      <UpdateFromURL>C:\Projetos\servicos_aplicacoes_csharp\Comum\ControlaWebServices\WSDL\Gtec_HBS_VendaTerminal_out_SI_v02.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Cielo_Gtec_ControlaWebServices_svcPAXVendaTerminal_v2_Gtec_HBS_VendaTerminal_out_SI</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="C:\temp\Gtec_HBS_GtecService_MI_11112018.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\svcSAP\</RelPath>
+      <UpdateFromURL>C:\temp\Gtec_HBS_GtecService_MI_11112018.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ControlaWebServices_svcTEste_Gtec_HBS_GtecService_MI</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CapturaMensageria\Cielo.Gtec.Common\Senac.Fecomercio.Common.csproj">
+      <Project>{e44e1b9c-bfec-49bc-81bc-672201c48c90}</Project>
+      <Name>Senac.Fecomercio.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CapturaMensageria\Cielo.Gtec.Entities\Senac.Fecomercio.Entities.csproj">
+      <Project>{1715f002-1661-4362-989f-529a33bf13e6}</Project>
+      <Name>Senac.Fecomercio.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\CapturaMensageria\Cielo.Gtec.Exceptions\Senac.Fecomercio.Exceptions.csproj">
+      <Project>{687c6451-4da1-4b99-87cc-becbb6c38c3d}</Project>
+      <Name>Senac.Fecomercio.Exceptions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\svcOsbAbrirEvento\" />
+    <WCFMetadataStorage Include="Service References\svcOsbConsultarDadosCadastraisCliente\" />
+    <WCFMetadataStorage Include="Service References\svcOsbConsultaTerminal\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fabricante\PAX\PAX_Request_Tracking.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="FaturamentoSAP\FaturamentoSAPDados.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="FaturamentoSAP\FaturamentoSAPRequest.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Service References\svcOsbAbrirEvento\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcOsbAbrirEvento\configuration.svcinfo" />
+    <None Include="Service References\svcOsbAbrirEvento\configuration91.svcinfo" />
+    <None Include="Service References\svcOsbConsultarDadosCadastraisCliente\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcOsbConsultarDadosCadastraisCliente\configuration.svcinfo" />
+    <None Include="Service References\svcOsbConsultarDadosCadastraisCliente\configuration91.svcinfo" />
+    <None Include="Service References\svcOsbConsultaTerminal\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\svcOsbConsultaTerminal\configuration.svcinfo" />
+    <None Include="Service References\svcOsbConsultaTerminal\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

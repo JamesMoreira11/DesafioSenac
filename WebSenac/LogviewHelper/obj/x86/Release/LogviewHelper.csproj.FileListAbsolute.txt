@@ -1,0 +1,10 @@
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\LogviewHelper\bin\x86\Release\LogviewHelper.dll
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\LogviewHelper\bin\x86\Release\LogviewHelper.pdb
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Release\LogviewHelper.csproj.CoreCompileInputs.cache
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Release\LogviewHelper.dll
+C:\git\featuredevelop\appSelg1189\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Release\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\bin\x86\Release\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\bin\x86\Release\LogviewHelper.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Release\LogviewHelper.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Release\LogviewHelper.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\WSProcessamentoArquivosGTeC\LogviewHelper\obj\x86\Release\LogviewHelper.pdb

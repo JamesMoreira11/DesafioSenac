@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--Saida em caso de falha-->
+<FileMap>
+  <Field Name="CodigoMensagem"                   Start="1" Length="4"/>
+  <Field Name="ChaveIdentificacaoGtec"           Start="5" Length="36"/>
+  <Field Name="IdentificadorOrigemChamada"       Start="41" Length="4"/>
+  <Field Name="OpcaoOperacao"                    Start="45" Length="1"/>
+  <Field Name="UsuarioSistemasRedes"             Start="46" Length="8"/>
+  <Field Name="UsuarioSistemaOrigem"             Start="54" Length="8"/>
+  <Field Name="CodigoRetorno"                    Start="62" Length="4"/>
+  <Field Name="MensagemRetorno"                  Start="66" Length="80"/>
+  <Field Name="CodigoEstabelecimentoComercial"   Start="146" Length="10"/>
+  <Field Name="Produto"                          Start="156" Length="3"/>
+  <Field Name="QuantidadeParcelasLoja"           Start="159" Length="2"/>
+  <Field Name="TipoCobranca"                     Start="161" Length="1"/>
+  <Field Name="TaxaComercial"                    Start="162" Length="5"/>
+  <Field Name="TaxaItem"                         Start="167" Length="5"/>
+  <Field Name="QuantidadeParcelasAdm"            Start="172" Length="2"/>
+  <Field Name="NumeroEstabelecimentoAmex"        Start="174" Length="16"/>
+  <Field Name="IndicadorLiquidacao"              Start="190" Length="1"/>
+  <Field Name="IndicadorContingenciaBatch"       Start="191" Length="1"/>
+  <Field Name="IndicadorDigitada"                Start="192" Length="1"/>
+  <Field Name="IndicadorMultiVan"                Start="193" Length="1"/>
+  <Field Name="CodigoMultiVan"                   Start="194" Length="3"/>
+  <Field Name="EstabelecimentoComercialMultiVan" Start="197" Length="18"/>
+  <Field Name="TipoTecnologia"                   Start="215" Length="3"/>
+  <Field Name="EspacoVago"                       Start="218" Length="1703"/>
+</FileMap>

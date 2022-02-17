@@ -1,0 +1,5 @@
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\bin\Release\Cielo.Gtec.Exceptions.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\bin\Release\Cielo.Gtec.Exceptions.pdb
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Release\Senac.Fecomercio.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Release\Cielo.Gtec.Exceptions.dll
+C:\Users\t1805jms\Desktop\Projetos\031 - Teste\Aplicacao\CapturaMensageria\Cielo.Gtec.Exceptions\obj\Release\Cielo.Gtec.Exceptions.pdb

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns:tns="http://canonico.cielo.com.br/governancasoa/comum/v1" targetNamespace="http://canonico.cielo.com.br/governancasoa/comum/v1" xmlns="http://www.w3.org/2001/XMLSchema">
+  <complexType name="CieloSoapHeaderType">
+    <sequence>
+      <choice minOccurs="0" maxOccurs="1">
+        <element minOccurs="1" maxOccurs="1" name="usuario" type="tns:UsuarioType" />
+        <element minOccurs="1" maxOccurs="1" name="token" type="string" />
+      </choice>
+      <element minOccurs="0" maxOccurs="1" name="recurso" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="realm" type="string" />
+      <element minOccurs="0" maxOccurs="1" name="identificacaoRequest" nillable="true" type="tns:IdentificacaoRequestType" />
+    </sequence>
+  </complexType>
+  <complexType name="IdentificacaoRequestType">
+    <annotation>
+      <documentation>
+    		Estes atributos sao utilizados no header cielo para identificar a origem da requisicao
+    		ao servico.
+    		</documentation>
+    </annotation>
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="nomeSistema" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="nomeTipoChamada" type="string" />
+    </sequence>
+  </complexType>
+  <complexType name="UsuarioType">
+    <sequence>
+      <element minOccurs="1" maxOccurs="1" name="id" type="string" />
+      <element minOccurs="1" maxOccurs="1" name="senha" type="string" />
+    </sequence>
+  </complexType>
+  <element name="cieloSoapHeader" type="tns:CieloSoapHeaderType" />
+  <simpleType name="faultcode">
+    <restriction base="string">
+      <enumeration value="ACESSO_NAO_AUTORIZADO" />
+      <enumeration value="TOKEN_INVALIDO" />
+      <enumeration value="SENHA_INVALIDA" />
+      <enumeration value="USUARIO_INVALIDO" />
+      <enumeration value="ERRO_NAO_ESPERADO" />
+    </restriction>
+  </simpleType>
+</schema>

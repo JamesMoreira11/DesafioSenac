@@ -1,0 +1,8 @@
+﻿<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:cielo:sap:gtec:faturamentoLogistico">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <urn:MT_FaturamentoLogisticoOutb>
+      {0}
+    </urn:MT_FaturamentoLogisticoOutb>
+  </soapenv:Body>
+</soapenv:Envelope>
